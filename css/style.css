@@ -32,6 +32,16 @@ header {
     padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
 
+.navbar-nav {
+    --bs-nav-link-disabled-color: #ede6d68a;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    white-space: nowrap;
+    margin-inline: auto;
+}
+
 .dropdown-menu {
     --bs-dropdown-link-active-color: #fff;
     --bs-dropdown-link-active-bg: #261616;
@@ -51,6 +61,26 @@ header {
         color: #261616;
     }
 }
+
+/* ICONS */
+.icons {
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+}
+
+.icons div:hover,
+.icons i:hover {
+    /* Cambia el color del borde al pasar el ratón sobre el elemento */
+    color: rgb(65, 8, 8);
+}
+
+.icons i {
+    font-size: 20px;
+    color: #fff;
+    margin: 1em;
+}
+
 
 /* SECCION 1: La esencia del cacao elevada al arte */
 .sect1 {
