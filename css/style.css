@@ -57,7 +57,7 @@ header {
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .dropdown-menu {
         position: absolute;
-        background-color: beige;
+        background-color: #EDE6D6;
         color: #261616;
     }
 }
@@ -72,7 +72,7 @@ header {
 .icons div:hover,
 .icons i:hover {
     /* Cambia el color del borde al pasar el ratón sobre el elemento */
-    color: rgb(65, 8, 8);
+    color: rgb(189, 113, 113);
 }
 
 .icons i {
@@ -89,4 +89,40 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+
+/* footer */
+footer {
+    background-color: #EDE6D6;
+    color: #261616;
+    padding: 4em;
+    font-size: 0.8em;
+}
+
+footer > p:not(:first-child) {
+    padding-left: 1em;
+}
+
+footer > p > a {
+    color: #EDE6D6;
+    text-decoration: none;
+}
+
+/* Redes sociales */
+.social {
+    display: flex;
+    width: 50%;
+}
+
+.social div:hover,
+.social i:hover {
+    /* Cambia el color del borde al pasar el ratón sobre el elemento */
+    color: rgb(189, 113, 113);
+}
+
+.social i {
+    font-size: 20px;
+    color: #261616;
+    margin: 1em;
 }
