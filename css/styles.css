@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
     box-sizing:border-box
@@ -83,17 +83,45 @@ header {
 .icons i {
     font-size: 20px;
     color: #ede6d6;
-    margin: 1em;
+    margin: 1rem;
 }
 
 
 /* SECCION 1: La esencia del cacao elevada al arte */
 .sect1 {
-    padding: 4em 6em;
+    padding: 8rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.sect1 h1 {
+    font-family:'Oswald', serif;
+    font-size: 9rem;
+    padding-bottom: 8rem;
+    margin: 0;
+    
+}
+
+.sect1 h1 > span {
+    font-family:"Parisienne", cursive;
+    font-size: 10rem;
+    letter-spacing: 10px;
+    line-height: 5px;
+}
+
+.columna2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-col2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    rotate: -90deg;
 }
 
     /* CARRUSEL */
@@ -101,17 +129,53 @@ header {
     .tarjeta-sec1 {
         background-color: transparent;
         border-color: transparent;
-        font-family: 'Oswald';
+        font-family: 'Oswald', serif;
         font-size: 1.5rem;
         color: #EDE6D6;
     }
 
+    .tarjeta-sec1 {
+        transition: transform 0.3s ease; /* Transición suave al cambiar el tamaño */
+    }
+    
+    .tarjeta-sec1:hover {
+        transform: scale(1.05); /* Aumentar el tamaño al 110% */
+
+    }
+   
+
     .tarjeta-sec1 .card-text {
-        font-family: "Playfair Display", serif;
-        font-weight: 400;
+        font-family: "Inter", sans-serif;
+        font-weight: 200;
         font-size: 0.9rem;
         padding: 1rem;
     }
+
+    .tarjeta-sec1 .card-img-top {
+        border-radius: 0;
+    }
+    /* Linea de progreso */
+
+    .flickity-page-dots {
+    display: none;
+    }
+    
+    .progress-line {
+        height: 5px;
+        background-color: #EDE6D6;
+        margin-top: 10px;
+        width: 50%; /* En relacion al padre */
+        position: relative; /* Position relative for absolute positioning */
+        border-radius: 3px;
+    }
+    .progress-fill {
+        height: 100%; /* Fill the height of the progress line */
+        background-color: #7a6f58; /* Color of the progress fill */
+        width: 0; /* Start with 0 width */
+        transition: width 0.5s; /* Smooth transition */
+        border-radius: 3px;
+    }
+
 
 
 /* footer */
