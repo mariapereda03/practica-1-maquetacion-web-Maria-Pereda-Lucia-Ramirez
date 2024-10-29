@@ -42,11 +42,12 @@ header {
 }
 
 .navbar-brand {
-    text-decoration: none;
-    white-space: nowrap;
-    margin-inline: auto;
+    display: flex;
+    align-items: center;
 }
-
+.logo-nav {
+    width:20%;
+}
 .dropdown-menu {
     --bs-dropdown-link-active-color: #fff;
     --bs-dropdown-link-active-bg: #261616;
@@ -58,6 +59,8 @@ header {
     background-color: #261616 !important;
     color: #EDE6D6;
 }
+
+
 
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .dropdown-menu {
