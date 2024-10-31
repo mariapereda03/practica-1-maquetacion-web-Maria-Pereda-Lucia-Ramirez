@@ -93,10 +93,6 @@ header {
 /* SECCION 1: La esencia del cacao elevada al arte */
 .sect1 {
     padding: 8rem 0rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .sect1 h1 {
@@ -179,7 +175,54 @@ header {
         border-radius: 3px;
     }
 
+ /* SECCIÓN 2 La esencia de nuestra tradición */
 
+    .sect2 {
+        background-color: #EDE6D6;
+        padding: 2rem 0;
+        color: #261616;
+        font-family: "Inter", sans-serif;
+    }
+
+    .sect2 h1 {
+        color: #261616;
+        font-family: 'Oswald', serif;
+        font-size: 7rem;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+
+    .sect2 h1 span {
+        font-family: "Parisienne", cursive;
+        font-size: 8rem;
+        letter-spacing: 10px;
+        line-height: 8px;
+    }
+
+    .sect2 .texto1 p {
+        text-align: left;
+        padding: 2rem 13rem 3rem 0rem;
+    }
+
+    .sect2 .texto2 p {
+        padding: 2rem 0 3rem 12rem;
+        text-align: right;
+    }
+
+    .sect2 h3 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    .sect2 .img1 img {
+        border-radius: 0 0 32rem 0;
+    }
+
+    .sect2 .img2 img {
+        border-radius: 32rem 0 0rem 0;
+    }
 
 /* footer */
 footer {
