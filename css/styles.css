@@ -290,6 +290,9 @@ footer {
     color: #261616;
     padding: 4em;
     font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer > p:not(:first-child) {
@@ -301,7 +304,7 @@ footer > p > a {
     text-decoration: none;
 }
 
-/* Redes sociales */
+/* RSS */
 .social {
     display: flex;
     width: 50%;
@@ -317,4 +320,203 @@ footer > p > a {
     font-size: 20px;
     color: #261616;
     margin: 1em;
+}
+
+/* LEGAL */
+.legal {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.legal p {
+    margin: 1em;
+}
+
+/*UBICACIÓN*/
+#ubi #target-content1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+#ubi #target-content1:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#ubi #target-content1 #target-inner1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    display: block;
+    padding: 2em;
+    background-color: #261616;
+    color: #DFDBE5;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+#ubi #target-content1 a.close1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(189, 113, 113, 0.348);
+}
+
+#ubi #target-content2 a.close1:hover {
+    background-color: #261616;
+}
+
+#ubi .pr-btn  {
+    margin: 0 auto;
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: white;
+    background-color: rgb(189, 113, 113);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+/*SUSCRIBETE*/
+#subscribe #target-content2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+#subscribe #target-content2:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#subscribe #target-content2 #target-inner2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    display: block;
+    padding: 2em;
+    background-color: #261616;
+    color: #DFDBE5;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+#subscribe #target-content2 a.close2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(189, 113, 113, 0.348);
+}
+
+#subscribe #target-content2 a.close2:hover {
+    background-color: #261616;
+}
+
+#subscribe .pr-btn  {
+    margin: 0 auto;
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: white;
+    background-color: rgb(189, 113, 113);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+
+/* EXTRA - FLECHA */
+#extra .flecha {
+    font-size: 30px;
+    position: fixed;
+    width: 1em;
+    right: 1em;
+    bottom: 0.5em;
+    z-index: 3;
+}
+
+
+/*ERROR*/
+#error #target-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+#error #target-content:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#error #target-content #target-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    display: block;
+    padding: 2em;
+    background-color: #261616;
+    color: #DFDBE5;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+#error #target-content a.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(189, 113, 113, 0.348);
+}
+
+#error #target-content a.close:hover {
+    background-color: #261616;
+}
+
+#error .pr-btn  {
+    margin: 0 auto;
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: white;
+    background-color: rgb(189, 113, 113);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 12px;
+    text-decoration: none;
 }
