@@ -24,6 +24,7 @@ header {
     color: #EDE6D6;
 }
 
+
 /* MENÚ */
 .navbar {
     --bs-navbar-color: #ede6d6;
@@ -44,10 +45,13 @@ header {
 .navbar-brand {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
+
 .logo-nav {
     width:20%;
 }
+
 .dropdown-menu {
     --bs-dropdown-link-active-color: #fff;
     --bs-dropdown-link-active-bg: #261616;
@@ -60,8 +64,6 @@ header {
     color: #EDE6D6;
 }
 
-
-
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .dropdown-menu {
         position: absolute;
@@ -71,6 +73,36 @@ header {
 }
 
 /* ICONS */
+.navbar-nav {
+    display: flex;
+    width: 30%;
+    justify-content: flex-start;
+}
+
+.navbar-nav i {
+    font-size: 20px;
+    color: #ede6d6;
+    margin: 1rem;
+}
+
+.navbar-nav div:hover,
+.navbar-nav i:hover {
+    /* Cambia el color del borde al pasar el ratón sobre el elemento */
+    color: rgb(189, 113, 113);
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+/* iconos compra y usuario */
+.icons i {
+    font-size: 30px;
+    color: #ede6d6;
+    margin: 1rem;
+}
+
 .icons {
     display: flex;
     width: 30%;
@@ -123,132 +155,134 @@ header {
     rotate: -90deg;
 }
 
-    /* CARRUSEL */
+/* CARRUSEL */
 
-    .tarjeta-sec1 {
-        background-color: transparent;
-        border-color: transparent;
-        font-family: 'Oswald', serif;
-        font-size: 1.5rem;
-        color: #EDE6D6;
-    }
+.tarjeta-sec1 {
+    background-color: transparent;
+    border-color: transparent;
+    font-family: 'Oswald', serif;
+    font-size: 1.5rem;
+    color: #EDE6D6;
+}
 
-    .tarjeta-sec1 {
-        transition: transform 0.3s ease; /* Transición suave al cambiar el tamaño */
-    }
+.tarjeta-sec1 {
+    transition: transform 0.3s ease; /* Transición suave al cambiar el tamaño */
+}
+
+.tarjeta-sec1:hover {
+    transform: scale(1.05); /* Aumentar el tamaño al 110% */
+
+}
+
+
+.tarjeta-sec1 .card-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+
+.tarjeta-sec1 .card-img-top {
+    border-radius: 0;
+}
+/* Linea de progreso */
+
+.flickity-page-dots {
+display: none;
+}
+
+.progress-line {
+    height: 5px;
+    background-color: #EDE6D6;
+    margin-top: 10px;
+    width: 50%; /* En relacion al padre */
+    position: relative; /* Position relative for absolute positioning */
+    border-radius: 3px;
+}
+.progress-fill {
+    height: 100%; /* Fill the height of the progress line */
+    background-color: #7a6f58; /* Color of the progress fill */
+    width: 0; /* Start with 0 width */
+    transition: width 0.5s; /* Smooth transition */
+    border-radius: 3px;
+}
+
+/* SECCIÓN 2 La esencia de nuestra tradición */
+
+.sect2 {
+    background-color: #EDE6D6;
+    padding: 2rem 0 0 0;
+    color: #261616;
+    font-family: "Inter", sans-serif;
+}
+
+.sect2 h1 {
+    color: #261616;
+    font-family: 'Oswald', serif;
+    font-size: 7rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.sect2 h1 span {
+    font-family: "Parisienne", cursive;
+    font-size: 8rem;
+    letter-spacing: 10px;
+    line-height: 8px;
+}
+
+.sect2 .texto1 p {
+    text-align: left;
+    padding: 2rem 13rem 3rem 0rem;
+}
+
+.sect2 .texto2 p {
+    padding: 2rem 0 3rem 12rem;
+    text-align: right;
+}
+
+.sect2 h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.sect2 .img1 img {
+    border-radius: 0 0 32rem 0;
+}
+
+.sect2 .img2 img {
+    border-radius: 32rem 0 0rem 0;
+}
+
+/* SECCION 3: Valores */
+
+.sect3 {
+    padding: 11rem;
+}
+
+.sect3 h1 {
+    font-size: 7.5rem;
+    font-family: 'Oswald', serif;
+}
+
+.sect3 span {
+    font-family: "Parisienne", cursive;
+    font-size: 8.5rem;
+    letter-spacing: 12px;
+    line-height: 8px;
+}
+
+/* SECCIÓN 4: Formulario */
+
+/* SECCIÓN 5: Descubre más */
+
     
-    .tarjeta-sec1:hover {
-        transform: scale(1.05); /* Aumentar el tamaño al 110% */
 
-    }
-   
 
-    .tarjeta-sec1 .card-text {
-        font-family: "Inter", sans-serif;
-        font-weight: 200;
-        font-size: 0.9rem;
-        padding: 1rem;
-    }
-
-    .tarjeta-sec1 .card-img-top {
-        border-radius: 0;
-    }
-    /* Linea de progreso */
-
-    .flickity-page-dots {
-    display: none;
-    }
-    
-    .progress-line {
-        height: 5px;
-        background-color: #EDE6D6;
-        margin-top: 10px;
-        width: 50%; /* En relacion al padre */
-        position: relative; /* Position relative for absolute positioning */
-        border-radius: 3px;
-    }
-    .progress-fill {
-        height: 100%; /* Fill the height of the progress line */
-        background-color: #7a6f58; /* Color of the progress fill */
-        width: 0; /* Start with 0 width */
-        transition: width 0.5s; /* Smooth transition */
-        border-radius: 3px;
-    }
-
- /* SECCIÓN 2 La esencia de nuestra tradición */
-
-    .sect2 {
-        background-color: #EDE6D6;
-        padding: 2rem 0 0 0;
-        color: #261616;
-        font-family: "Inter", sans-serif;
-    }
-
-    .sect2 h1 {
-        color: #261616;
-        font-family: 'Oswald', serif;
-        font-size: 7rem;
-        padding: 2rem;
-        margin-bottom: 3rem;
-        text-align: left;
-    }
-
-    .sect2 h1 span {
-        font-family: "Parisienne", cursive;
-        font-size: 8rem;
-        letter-spacing: 10px;
-        line-height: 8px;
-    }
-
-    .sect2 .texto1 p {
-        text-align: left;
-        padding: 2rem 13rem 3rem 0rem;
-    }
-
-    .sect2 .texto2 p {
-        padding: 2rem 0 3rem 12rem;
-        text-align: right;
-    }
-
-    .sect2 h3 {
-        font-family: 'Playfair Display', serif;
-        font-weight: 700;
-        font-size: 2rem;
-    }
-
-    .sect2 .img1 img {
-        border-radius: 0 0 32rem 0;
-    }
-
-    .sect2 .img2 img {
-        border-radius: 32rem 0 0rem 0;
-    }
-
-    /* SECCION 3: Valores */
-
-    .sect3 {
-        padding: 11rem;
-    }
-
-    .sect3 h1 {
-        font-size: 7.5rem;
-        font-family: 'Oswald', serif;
-    }
-
-    .sect3 span {
-        font-family: "Parisienne", cursive;
-        font-size: 8.5rem;
-        letter-spacing: 12px;
-        line-height: 8px;
-    }
-
-    /* SECCIÓN 4: Formulario */
-
-    /* SECCIÓN 5: Descubre más */
 
     
-
-
 
 /* footer */
 footer {
