@@ -1,3 +1,19 @@
+// COOKIES
+$(document).ready(function() {
+    console.log("Document is ready"); // Agrega esta línea
+    if (!localStorage.getItem('cookiesAccepted')) {
+        var toastElement = document.getElementById('cookieToast');
+        var toast = new bootstrap.Toast(toastElement);
+        toast.show();
+    }
+    $('#acceptCookies').click(function() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        var toastElement = document.getElementById('cookieToast');
+        var toast = bootstrap.Toast.getInstance(toastElement);
+        toast.hide();
+    });
+});
+
 // CARRUSEL SECCION 1
 
 $(document).ready(function() {
