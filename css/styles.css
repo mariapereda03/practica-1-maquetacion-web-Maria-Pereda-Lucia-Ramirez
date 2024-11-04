@@ -581,79 +581,80 @@ footer > p > a {
 }
 
 /*INSCRIPCIÓN*/
-#inscription {
-    padding: 4em 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    z-index: 1;
-    background-image: url(../img/asientosyfocos.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#inscription #target-content4 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
 }
 
-#inscription form {
-    width: 600px;
+#inscription #user_form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#inscription #target-content4:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#inscription #target-content4 #target-inner4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
     padding: 2em;
-    background-color:#26060C;
-    color: #dabdbd;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #261616;
+    color: #DFDBE5;
+    border-radius: 20px;
+    z-index: 3;
 }
 
-#inscription form fieldset {
-    display: flex;
-    flex-direction: column;
-    padding: 3em;
-    margin-bottom: 1em;
+#inscription #target-content4 a.close4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(189, 113, 113, 0.348);
+}
+
+#inscription #target-content4 a.close4:hover {
+    background-color: rgba(189, 113, 113, 0.476);
+}
+
+#inscription .pr-btn  {
+    margin: 0 auto;
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: white;
+    background-color: rgb(189, 113, 113);
+    text-align: center;
+    cursor: pointer;
     width: 100%;
-}
-
-#inscription form fieldset > input {
-    margin-bottom: 1.5em;
+    font-size: 16px;
+    border-radius: 12px;
+    text-decoration: none;
 }
 
 #inscription form fieldset:first-child input {
     margin-top: 0.5em;
-    height: 3em;
-    padding: 1em;
+    height: 1em;
+    padding: 0.5em;
     border-radius: 12px;
     border: none;
 }
-
-#inscription form fieldset:first-child input:focus {
-    outline: none;
-    background-color: thistle;
-}
-
-#inscription form input[type="submit"] {
-    width: 150px;
-    padding: 1em;
-    border-radius: 10px;
-    font-size: 1.15em;
-    cursor: pointer;
-}
-
-#inscription form fieldset fieldset div div label{
-    margin-top: 16px;
-}
-
 
 #inscription form fieldset fieldset div div {
     display: flex;
     flex-direction: row;
 }
-
-#inscription form fieldset fieldset div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
