@@ -27,15 +27,14 @@ header {
 
 /* MENÚ */
 .navbar {
-    --bs-navbar-color: #ede6d6;
-    --bs-navbar-hover-color: #ede6d6;
-    --bs-navbar-active-color: #ede6d6;
-    --bs-navbar-brand-color: #ede6d6;
-    --bs-navbar-brand-hover-color: #ede6d6;
-    position: relative;
+    position: fixed;
+    top: 0em;
+    right: 0em;
+    left: 0em;
     display: flex;
     align-items: center;
     padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+    z-index: 5;
 }
 
 .navbar-nav {
@@ -432,7 +431,7 @@ footer > p > a {
 }
 
 #subscribe #target-content2 a.close2:hover {
-    background-color: #261616;
+    background-color: rgba(189, 113, 113, 0.476);
 }
 
 #subscribe .pr-btn  {
@@ -503,7 +502,7 @@ footer > p > a {
 }
 
 #error #target-content a.close:hover {
-    background-color: #261616;
+    background-color: rgba(189, 113, 113, 0.476);
 }
 
 #error .pr-btn  {
