@@ -276,6 +276,40 @@ display: none;
 /* SECCIÓN 4: Formulario */
 
 /* SECCIÓN 5: Descubre más */
+.sect5 {
+    padding: 10em 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+
+    z-index: 1;
+    background-image: url(../media/imgs/chocolate-descubre-mas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect5 .pr-btn  {
+    margin: 0 auto;
+    border: none;
+    outline: 0;
+    padding: 1em;
+    color: #EDE6D6;
+    background-color: rgb(189, 113, 113);
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+}
 
     
 
@@ -311,7 +345,6 @@ footer > p > a {
 
 .social div:hover,
 .social i:hover {
-    /* Cambia el color del borde al pasar el ratón sobre el elemento */
     color: rgb(189, 113, 113);
 }
 
@@ -320,6 +353,7 @@ footer > p > a {
     color: #261616;
     margin: 1em;
 }
+
 
 /* LEGAL */
 .legal {
@@ -330,6 +364,7 @@ footer > p > a {
 .legal p {
     margin: 1em;
 }
+
 
 /*UBICACIÓN*/
 #ubi #target-content1 {
@@ -389,6 +424,7 @@ footer > p > a {
     border-radius: 12px;
     text-decoration: none;
 }
+
 
 /*SUSCRIBETE*/
 #subscribe #target-content2 {
@@ -519,6 +555,7 @@ footer > p > a {
     border-radius: 12px;
     text-decoration: none;
 }
+
 
 /*USUARIO*/
 #form #target-content3 {
