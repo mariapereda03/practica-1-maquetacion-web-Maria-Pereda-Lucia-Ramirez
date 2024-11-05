@@ -15,7 +15,6 @@ $(document).ready(function() {
 });
 
 // CARRUSEL SECCION 1
-
 $(document).ready(function() {
     $('.main-carousel').flickity({
         cellAlign: 'left',
