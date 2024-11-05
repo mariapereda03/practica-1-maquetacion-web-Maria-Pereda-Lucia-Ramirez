@@ -1,12 +1,13 @@
 // COOKIES
 $(document).ready(function() {
-    console.log("Document is ready"); // Agrega esta línea
     if (!localStorage.getItem('cookiesAccepted')) {
         var toastElement = document.getElementById('cookieToast');
         var toast = new bootstrap.Toast(toastElement);
         toast.show();
     }
+
     $('#acceptCookies').click(function() {
+        $(this).removeClass('btn-primary').addClass('btn-red');
         localStorage.setItem('cookiesAccepted', 'true');
         var toastElement = document.getElementById('cookieToast');
         var toast = bootstrap.Toast.getInstance(toastElement);
