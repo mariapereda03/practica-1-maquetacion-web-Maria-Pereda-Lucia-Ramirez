@@ -1,6 +1,5 @@
-
-// COOKIES
 $(document).ready(function() {
+    // COOKIES
     if (!localStorage.getItem('cookiesAccepted')) {
         var toastElement = document.getElementById('cookieToast');
         var toast = new bootstrap.Toast(toastElement);
@@ -14,6 +13,37 @@ $(document).ready(function() {
         var toast = bootstrap.Toast.getInstance(toastElement);
         toast.hide();
     });
+
+    //BUSCADOR
+    document.getElementById("search-icon").addEventListener("click", function() {
+        var searchBar = document.getElementById("search-bar");
+        if (searchBar.style.display === "none" || searchBar.style.display === "") {
+            searchBar.style.display = "block"; // Muestra la barra de búsqueda
+            searchBar.focus(); // Opcional: enfocar la barra de búsqueda
+        } else {
+            searchBar.style.display = "none"; // Oculta la barra de búsqueda
+        }
+    });
+    
+    // CARRUSEL SECCION 1
+    $('.main-carousel').flickity({
+        cellAlign: 'left',
+        contain: true,
+        freeScroll: true,
+        prevNextButtons: false,
+    });
+
+    // BARRA DE PROGRESO DEL CARRUSEL
+    $('.main-carousel').on('select.flickity', function(event, index) {
+        var totalCells = $('.main-carousel .carousel-cell').length; // Total number of cells
+        var progressWidth = ((index + 1) / totalCells) * 100; // Calculate progress width as a percentage
+        $('.progress-fill').css('width', progressWidth + '%'); // Update the width of the progress fill
+    });
+
+    // Trigger the select event on initialization to set the initial progress line width
+    var initialIndex = $('.main-carousel').data('flickity').selectedIndex;
+    var initialProgressWidth = ((initialIndex + 1) / totalCells) * 100;
+    $('.progress-fill').css('width', initialProgressWidth + '%');
 });
 
 //INSCRIPCIÓN
@@ -47,30 +77,4 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.error("El botón no se encontró en el DOM.");
     }
-});
-
-
-
-// CARRUSEL SECCION 1
-$(document).ready(function() {
-    $('.main-carousel').flickity({
-        cellAlign: 'left',
-        contain: true,
-        freeScroll: true,
-        prevNextButtons: false,
-    });
-
-    // BARRA DE PROGRESO DEL CARRUSEL
-
-    // Update progress line on select event
-    $('.main-carousel').on('select.flickity', function(event, index) {
-        var totalCells = $('.main-carousel .carousel-cell').length; // Total number of cells
-        var progressWidth = ((index + 1) / totalCells) * 100; // Calculate progress width as a percentage
-        $('.progress-fill').css('width', progressWidth + '%'); // Update the width of the progress fill
-    });
-
-    // Trigger the select event on initialization to set the initial progress line width
-    var initialIndex = $('.main-carousel').data('flickity').selectedIndex;
-    var initialProgressWidth = ((initialIndex + 1) / totalCells) * 100;
-    $('.progress-fill').css('width', initialProgressWidth + '%');
 });
