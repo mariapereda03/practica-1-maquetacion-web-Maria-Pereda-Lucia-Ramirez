@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
     box-sizing:border-box
@@ -196,7 +196,7 @@ header {
 
 
 .tarjeta-sec1 .card-text {
-    font-family: "Inter", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 200;
     font-size: 0.9rem;
     padding: 1rem;
@@ -232,7 +232,7 @@ display: none;
     background-color: #EDE6D6;
     padding: 2rem 0 0 0;
     color: #261616;
-    font-family: "Inter", sans-serif;
+    font-family: "montserrat", sans-serif;
 }
 
 .sect2 h1 {
@@ -307,7 +307,7 @@ display: none;
     color: #261616;
 }
 
-.row {
+.sect4 .opiniones {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -349,7 +349,7 @@ display: none;
     margin-top: 10px;
 }
 
-.row:after {
+.opiniones:after {
     content: "";
     display: table;
     clear: both;
@@ -417,9 +417,68 @@ display: none;
 
     
 
+/* PAGINA PRODUCTOS */
 
+/* Sección 1: Nuestras mejores exquisiteces */
 
-    
+.sect1-p2 h1 {
+    font-family: 'Oswald', serif;
+    font-size: 7rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.sect1-p2 h1 span {
+    font-family:"Parisienne", cursive;
+    font-size: 8rem;
+    letter-spacing: 15px;
+    line-height: 5px;
+}
+
+/* SECCIÓN 2: Para paladares con buen gusto */
+
+.sect2-p2 {
+    background-color: #EDE6D6;
+    color: #261616;
+    font-family: "montserrat", sans-serif;
+}
+
+.sect2-p2 h1 {
+    font-family: 'Oswald', serif;
+    font-size: 7rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    text-align: left;
+    padding-right: 30rem;
+}
+
+.sect2-p2 h1 span {
+    font-family:"Parisienne", cursive;
+    font-size: 8rem;
+    letter-spacing: 15px;
+    line-height: 5px;
+}
+
+.sect2-p2 h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.sect2-p2 .texto3 p {
+    text-align: left;
+    padding: 2rem 13rem 3rem 0rem;
+}
+.sect2-p2 .texto4 p {
+    text-align: left;
+    padding: 2rem 5rem 0rem 0rem;
+}
+
+.sect2-p2 h3 {
+    font-size: 3rem;
+}
+
 
 /* footer */
 footer {
