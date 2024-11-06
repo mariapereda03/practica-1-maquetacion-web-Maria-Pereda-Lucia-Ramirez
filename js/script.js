@@ -1,3 +1,4 @@
+
 // COOKIES
 $(document).ready(function() {
     if (!localStorage.getItem('cookiesAccepted')) {
@@ -14,6 +15,41 @@ $(document).ready(function() {
         toast.hide();
     });
 });
+
+//INSCRIPCIÓN
+document.addEventListener('DOMContentLoaded', function() {
+    'use strict';
+
+    const formulario = document.getElementById('miFormulario');
+    const mensajeExito = document.getElementById('mensajeExito');
+    const botonEnviar = formulario.querySelector('button');
+
+    formulario.addEventListener('submit', event => {
+        if (!formulario.checkValidity()) {
+            event.preventDefault(); // Evita el envío si no es válido
+            event.stopPropagation(); // Detiene la propagación del evento
+        } else {
+            event.preventDefault(); // Previene el envío predeterminado del formulario
+            botonEnviar.classList.remove('btn-primary');
+            botonEnviar.classList.add('btn-success'); // Cambia el botón a verde
+            mensajeExito.classList.remove('d-none'); // Muestra el mensaje de éxito
+        }
+
+        formulario.classList.add('was-validated'); // Aplica la clase de validación de Bootstrap
+    }, false);
+
+    // Código para el botón de continuar (si es necesario)
+    const continueBtn = document.querySelector(".button");
+    if (continueBtn) {
+        continueBtn.addEventListener('click', function() {
+            alert("click");
+        });
+    } else {
+        console.error("El botón no se encontró en el DOM.");
+    }
+});
+
+
 
 // CARRUSEL SECCION 1
 $(document).ready(function() {

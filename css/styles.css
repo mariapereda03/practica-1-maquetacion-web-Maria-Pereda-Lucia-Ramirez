@@ -677,7 +677,7 @@ footer > p > a {
     background-color: rgba(189, 113, 113, 0.476);
 }
 
-#inscription .pr-btn  {
+.btn-primary {
     margin: 0 auto;
     border: none;
     outline: 0;
@@ -703,6 +703,13 @@ footer > p > a {
 #inscription form fieldset fieldset div div {
     display: flex;
     flex-direction: row;
+}
+
+.was-validated .form-control:valid {
+    border-color: #28a745;
+}
+.was-validated .form-control:invalid {
+    border-color: #dc3545;
 }
 
 /*COOKIES*/

@@ -11,8 +11,7 @@
 
     <!-- BOOSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS de Flickity -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
 
@@ -358,53 +357,62 @@
       <div id="target-content4">
         <a href="#inscription" class="close4"></a>
         <div id="target-inner4">
-          <form id="user_form" onsubmit="return validateFormPass()">
-            <fieldset>
-              <h3>SUSCRIBETE</h3>
-              <br>
-              <P> Regístrate y recibirás una selección cada semana de las mejores recetas con chocolate, junto a las novedades en el mundo del cacao y la cocina. </P>
-              <br>
-              <label for="user_name">Nombre: </label>
-              <input type="text" name="user_name" id="user_name">
-              <br>
-              <label for="user_name">Apellidos: </label>
-              <input type="text" name="user_name" id="user_name">
-              <br>
-              <label for="user_email">Email de contacto: </label>
-              <input type="text" name="user_email" id="user_email">
-              <br>
-              <label for="user_phone">Teléfno de contácto: </label>
-              <input type="number" name="user_phone" id="user_phone">
-              <br>
-              <br>
-              <fieldset>
-                <div>
-                  <div>
-                    <input type="checkbox" id="condiciones" name="category"> 
-                    <label for="condiciones">
-                      Acepta los términos y condiciones.
-                    </label>
+          <div class="container mt-5">
+            <form class="needs-validation" novalidate id="miFormulario">
+                <div class="row">
+                  <h3>SUSCRIBETE</h3>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text" id="inputGroupPrepend">@</span>
+                      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                      <div class="invalid-feedback">
+                        Por favor, elija un nombre de usuario.
+                      </div>
+                    </div>
                   </div>
-                  <br>
-                  <div>
-                    <input type="checkbox" id="marcas" name="category"> 
-                    <label for="marcas">
-                      Bergé y otras marcas editadas por Hearst España S.L. podrán enviarte información por vía electrónica sobre nuestros productos y servicios. Marca la siguiente casilla si te opones a recibir este tipo de comunicaciones                      </label>
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre de pila</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                    <div class="valid-feedback">¡Se ve bien!</div>
+                    <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
                   </div>
-                  <br>
-                  <div>
-                    <input type="checkbox" id="comercial" name="category"> 
-                    <label for="comercial">
-                      Si deseas que te enviemos información comercial por via electrónica de nuestros Socios Comerciales, por favor marca la siguiente casilla.
-                    </label>
+                  <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" required>
+                    <div class="valid-feedback">¡Se ve bien!</div>
+                    <div class="invalid-feedback">Por favor, ingrese su apellido.</div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom03" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                      Proporcione una ciudad válida.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationCustom05" class="form-label">Código Postal</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                      Por favor proporcione un código postal válido.
+                    </div>
+                  </div>
+              </div>
+              <div class="col-12 mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Acepto los términos y condiciones
+                  </label>
+                  <div class="invalid-feedback">
+                    Debes aceptar antes de enviar.
                   </div>
                 </div>
-              </fieldset>
-            </fieldset>
-            <br>
-            <br>
-            <a href="#" class="pr-btn">Enviar</a>
-        </form>
+              </div>
+              <button class="btn btn-primary" type="submit">Enviar</button>
+              <div id="mensajeExito" class="alert alert-success d-none mt-3" role="alert">¡Formulario enviado con éxito!</div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -431,8 +439,7 @@
           <div id="target-inner2">
             <h2>¡No te pierdas nada!</h2>
             <br>
-            <p>Regístrate y recibirás una selección cada semana de las mejores recetas con chocolate, junto a las novedades en el mundo del cacao y la cocina. </P>
-            </p>
+            <P> Regístrate y recibirás una selección cada semana de las mejores recetas con chocolate, junto a las novedades en el mundo del cacao y la cocina. </P>
             <br>
             <input type="email" id="email_sub">
             <br>
@@ -443,9 +450,9 @@
     </section>
 
 
-    <!-- BOOSTRAP -->
+    <!-- ENLACES -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
