@@ -273,7 +273,16 @@ display: none;
     line-height: 8px;
 }
 
-/* SECCIÓN 4: Formulario */
+.container-text-center {
+    border: 0.5em solid #EDE6D6;
+    padding: 5em;
+    border-radius: 5em;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+/* SECCIÓN 4: Opinión de nuestros clientes */
 
 /* SECCIÓN 5: Descubre más */
 .sect5 {
