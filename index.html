@@ -1,553 +1,559 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bergé</title>
-    
-    <!-- LINK FONTAWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  
-    <!-- BOOSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  
-    <!-- CSS de Flickity -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
-  
-    <!-- CSS PROPIO -->
-    <link rel="stylesheet" href="css/styles.css">
-  
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
-    <!-- JQUERY -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/6Kq4c9Q1Hf5U2W7gZg1XK0L6W9FqQ9d9Q6P1aD3zTn4X2E2P5Q9Q7TQ9fU6Q==" crossorigin="anonymous"></script>
-  
-    <!-- JS de Flickity -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
-  
-    <!-- JS PROPIO -->
-    <script src="js/script.js"></script>
-  </head>
 
-  <body>
-    <!-- COOKIES -->
-    <section>
-      <div class="toast" id="cookieToast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
-        <div class="toast-header">
-          <i class="fa-solid fa-cookie-bite"></i>
-          <strong class="me-auto">COOKIES</strong>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bergé</title>
+  <!-- LINK FONTAWESOME  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- BOOSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS de Flickity -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
+
+  <!-- CSS PROPIO -->
+  <link rel="stylesheet" href="css\styles.css">
+
+  <!-- WW3 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  <!-- JS de Flickity -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+
+  <!-- JS PROPIO  -->
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <!-- COOKIES -->
+  <section>
+    <div class="toast" id="cookieToast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+      <div class="toast-header">
+        <i class="fa-solid fa-cookie-bite"></i>
+        <strong class="me-auto">COOKIES</strong>
+      </div>
+      <div class="toast-body">
+        ¡Hola! Te informamos de que en este sitio Web utilizamos cookies.
+        <div class="mt-2 pt-2 border-top">
+          <button type="button" class="btn btn-primary btn-sm" id="acceptCookies">Aceptar</button>
+          <br>
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Cerrar</button>
         </div>
-        <div class="toast-body">
-          ¡Hola! Te informamos de que en este sitio Web utilizamos cookies.
-          <div class="mt-2 pt-2 border-top">
-            <button type="button" class="btn btn-primary btn-sm" id="acceptCookies">Aceptar</button>
-            <br>
-            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Cerrar</button>
+      </div>
+    </div>
+  </section>
+
+  <header>
+    <!-- MENÚ -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+            <li class="nav-item dropdown">
+              <div class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sobre Nosotros</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#sect1">La Esencia del Cacao Elevada al Arte</a></li>
+                <li><a class="dropdown-item" href="#sect2">La Esencia de Nuestra Tradición</a></li>
+                <li><a class="dropdown-item" href="#sect3">Cacao de origen</a></li>
+                <li><a class="dropdown-item" href="#sect4">Opiniones</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="products.html #sect1-p2">Nuestras Mejores Exquisiteces</a></li>
+                <li><a class="dropdown-item" href="products.html #sect2-p2">Para Paladares con Buen Gusto</a></li>
+                <li><a class="dropdown-item" href="products.html #sect3-p2">Delicatesens Secretas</a></li>
+              </ul>
+            </li>
+            <div id="search-container">
+              <button id="search-icon" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <input type="text" id="search-bar" placeholder="Buscar..." style="display: none;">
+            </div>
+          </ul>
+
+          <!-- LOGO -->
+          <a class="navbar-brand" href="#"><img class="logo-nav" src="media\imgs\logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- ICONS -->
+          <div class="icons">
+            <a class="navbar-brand" href="#target-content">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </a>
+            <a class="navbar-brand" href="#target-content3">
+              <i class="fa-solid fa-user"></i>
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </nav>
+    <!-- VIDEO -->
+    <div class="ratio ratio-16x9">
+      <video src="media\video\video-header.mp4" autoplay loop muted></video>
+    </div>
+  </header>
 
-    <header>
-      <!-- MENÚ -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
-              <li class="nav-item dropdown">
-                <div class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-bars"></i>
+  <main>
+    <!-- SECCION 1: La esencia del cacao elevada al arte -->
+    <div class="sect1" id="sect1">
+      <div class="container-fluid text-center contenedor-sect1">
+        <div class="row">
+          <div class="col-xl-12">
+            <h1>
+              <span>L</span>A ESENCIA DEL <span>C</span>ACAO <br><span>E</span>LEVADA AL <span>A</span>RTE
+            </h1>
+          </div>
+          <div class="col-xl-3 columna2">
+            <h3 class="texto-col2">Nuestra<br>recomendación</h3>
+          </div>
+          <div class="col-xl-9">
+            <!-- CARRUSEL -->
+            <div class="main-carousel">
+              <div class="carousel-cell">
+                <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
+                  <img src="media\imgs\chocolate-frambuesa.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h3 class="card-title">CONCORDIA</h5>
+                      <p class="card-text">Intenso cacao Arriba ecuatoriano con frambuesas Heritage</p>
+                  </div>
                 </div>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Sobre Nosotros</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#sect1">La Esencia del Cacao Elevada al Arte</a></li>
-                  <li><a class="dropdown-item" href="#sect2">La Esencia de Nuestra Tradición</a></li>
-                  <li><a class="dropdown-item" href="#sect3">Cacao de origen</a></li>
-                  <li><a class="dropdown-item" href="#sect4">Opiniones</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="products.html #sect1-p2">Nuestras Mejores Exquisiteces</a></li>
-                  <li><a class="dropdown-item" href="products.html #sect2-p2">Para Paladares con Buen Gusto</a></li>
-                  <li><a class="dropdown-item" href="products.html #sect3-p2">Delicatesens Secretas</a></li>
-                </ul>
-              </li>
-              <div id="search-container">
-                <button id="search-icon" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <input type="text" id="search-bar" placeholder="Buscar..." style="display: none;">
               </div>
-            </ul>
-
-            <!-- LOGO -->
-            <a class="navbar-brand" href="#"><img class="logo-nav" src="media\imgs\logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- ICONS -->
-            <div class="icons">
-              <a class="navbar-brand" href="#target-content">
-                <i class="fa-solid fa-basket-shopping"></i>
-              </a>
-              <a class="navbar-brand" href="#target-content3">
-                <i class="fa-solid fa-user"></i>
-              </a>
+              <div class="carousel-cell">
+                <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
+                  <img src="media\imgs\trufa-pistacho.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h3 class="card-title">MIROR</h5>
+                      <p class="card-text">Trufa de cacao Nacional con pistachos de Bronte</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
+                  <img src="media\imgs\chocolate-fresa.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h3 class="card-title">HARMONIA</h5>
+                      <p class="card-text">Cacao Nacional y fresas de Jerez</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
+                  <img src="media\imgs\chocolate-mango.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h3 class="card-title">AMORALIS</h5>
+                      <p class="card-text">Intenso cacao Arriba ecuatoriano y mango Alphonso</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
+                  <img src="media\imgs\bocados-violeta.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h3 class="card-title">OMNIA</h5>
+                      <p class="card-text">Chocolate blanco Ivorie, violetas cristalizadas de Toulouse y relleno cremoso
+                        de marshmallow.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
+                  <img src="media\imgs\bombon-macadamia.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h3 class="card-title">AURUM</h5>
+                      <p class="card-text">Cacao Arriba, nuez de macadamia y maracuyá fresca.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Progress Line -->
+            <div class="progress-line">
+              <div class="progress-fill"></div>
             </div>
           </div>
         </div>
-      </nav>
-      <!-- VIDEO -->
-      <div class="ratio ratio-16x9">
-        <video src="media\video\video-header.mp4" autoplay loop muted></video>
       </div>
-    </header>
+    </div>
 
-    <main>
-      <!-- SECCION 1: La esencia del cacao elevada al arte -->
-      <div class="sect1" id="sect1">
-        <div class="container-fluid text-center contenedor-sect1">
+    <!-- SECCION 2: La esencia de nuestra tradición -->
+    <div class="sect2" id="sect2">
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-xl-12 d-flex justify-content-start">
+            <h1><span>L</span>A ESENCIA DE <br><span>N</span>UESTRA<span> T</span>RADICIÓN</h1>
+          </div>
+          <div class="col-xl-7 img1 g-0">
+            <img src="media\imgs\granos-cacao.jpg" alt="">
+          </div>
+          <div class="col-xl-5 d-flex ps-4 flex-column justify-content-end align-items-start texto1">
+            <h3>TRADICIÓN FAMILIAR</h3>
+            <p>Bergé es una tradición familiar que comenzó en 1885 en Hondarribia, al norte del País Vasco, pasando de
+              generación en generación el arte de crear chocolates de alta calidad. Nos enorgullece ofrecer sabores
+              auténticos que cuentan una historia de pasión, dedicación y excelencia en cada bocado.</p>
+          </div>
+          <div class="col-xl-5 texto2 pe-5 d-flex flex-column justify-content-end align-items-end">
+            <h3>ELABORACIÓN ARTESANAL</h3>
+            <p>Elaboramos cada uno de nuestros chocolates de manera completamente artesanal, seleccionando solo los
+              mejores ingredientes para garantizar un sabor y calidad inigualables. Cuidamos cada detalle del proceso,
+              desde la elección de cacao hasta el empaquetado final, para ofrecer una experiencia única en cada pieza.
+              Nuestro compromiso es que cada bocado transmita la pasión y dedicación con la que llevamos adelante esta
+              tradición.</p>
+          </div>
+          <div class="col-xl-7 img2 g-0">
+            <img src="media\imgs\chocolatero2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCION 3: Valores -->
+    <div class="sect3" id="sect3">
+      <div class="container-text-center">
+        <div class="row">
+          <div class="col-xl-12">
+            <h1><span>C</span>ACAO DE ORIGEN</h1>
+          </div>
+          <div class="col-xl-12">
+            <h1><span>E</span>LABORACIÓN ARTESANAL</h1>
+          </div>
+          <div class="col-xl-12">
+            <h1><span>S</span>ELECCIÓN EXCLUSIVA</h1>
+          </div>
+          <div class="col-xl-12">
+            <h1><span>C</span>ALIDAD INIGUALABLE</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCION 4: Opinión de nuestros clientes -->
+    <div class="sect4" id="sect4">
+      <div class="container-text-center">
+        <div class="row opiniones">
+          <div class="heading">
+            <h1><span>O</span>PINIONES</h1>
+          </div>
+          <p>4.1 de promedio basado en 254k de reseñas.</p>
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <br>
           <div class="row">
-            <div class="col-xl-12">
-              <h1>
-                <span>L</span>A ESENCIA DEL <span>C</span>ACAO <br><span>E</span>LEVADA AL <span>A</span>RTE
-              </h1>
+            <div class="side">
+              <div>5 estrellas</div>
             </div>
-            <div class="col-xl-3 columna2">
-              <h3 class="texto-col2">Nuestra<br>recomendación</h3>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-5"></div>
+              </div>
             </div>
-            <div class="col-xl-9">
-              <!-- CARRUSEL -->
-              <div class="main-carousel">
-                <div class="carousel-cell">
-                  <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
-                    <img src="media\imgs\chocolate-frambuesa.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h3 class="card-title">CONCORDIA</h5>
-                        <p class="card-text">Intenso cacao Arriba ecuatoriano con frambuesas Heritage</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-cell">
-                  <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
-                    <img src="media\imgs\trufa-pistacho.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h3 class="card-title">MIROR</h5>
-                        <p class="card-text">Trufa de cacao Nacional con pistachos de Bronte</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-cell">
-                  <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
-                    <img src="media\imgs\chocolate-fresa.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h3 class="card-title">HARMONIA</h5>
-                        <p class="card-text">Cacao Nacional y fresas de Jerez</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-cell">
-                  <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
-                    <img src="media\imgs\chocolate-mango.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h3 class="card-title">AMORALIS</h5>
-                        <p class="card-text">Intenso cacao Arriba ecuatoriano y mango Alphonso</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-cell">
-                  <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
-                    <img src="media\imgs\bocados-violeta.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h3 class="card-title">OMNIA</h5>
-                        <p class="card-text">Chocolate blanco Ivorie, violetas cristalizadas de Toulouse y relleno cremoso
-                          de marshmallow.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-cell">
-                  <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
-                    <img src="media\imgs\bombon-macadamia.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <h3 class="card-title">AURUM</h5>
-                        <p class="card-text">Cacao Arriba, nuez de macadamia y maracuyá fresca.</p>
-                    </div>
-                  </div>
-                </div>
+            <div class="side right">
+              <div>150</div>
+            </div>
+            <div class="side">
+              <div>4 estrellas</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-4"></div>
               </div>
-              <!-- Progress Line -->
-              <div class="progress-line">
-                <div class="progress-fill"></div>
+            </div>
+            <div class="side right">
+              <div>63</div>
+            </div>
+            <div class="side">
+              <div>3 estrellas</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-3"></div>
               </div>
+            </div>
+            <div class="side right">
+              <div>15</div>
+            </div>
+            <div class="side">
+              <div>2 estrellas</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-2"></div>
+              </div>
+            </div>
+            <div class="side right">
+              <div>6</div>
+            </div>
+            <div class="side">
+              <div>1 estrellas</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-1"></div>
+              </div>
+            </div>
+            <div class="side right">
+              <div>20</div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- SECCION 2: La esencia de nuestra tradición -->
-      <div class="sect2" id="sect2">
-        <div class="container-fluid text-center">
-          <div class="row">
-            <div class="col-xl-12 d-flex justify-content-start">
-              <h1><span>L</span>A ESENCIA DE <br><span>N</span>UESTRA<span> T</span>RADICIÓN</h1>
-            </div>
-            <div class="col-xl-7 img1 g-0">
-              <div data-aos="fade-down-right">
-                <img src="media\imgs\granos-cacao.jpg" alt="">
-              </div>
-            </div>
-            <div class="col-xl-5 d-flex ps-4 flex-column justify-content-end align-items-start texto1">
-              <h3>TRADICIÓN FAMILIAR</h3>
-              <p>Bergé es una tradición familiar que comenzó en 1885 en Hondarribia, al norte del País Vasco, pasando de
-                generación en generación el arte de crear chocolates de alta calidad. Nos enorgullece ofrecer sabores
-                auténticos que cuentan una historia de pasión, dedicación y excelencia en cada bocado.</p>
-            </div>
-            <div class="col-xl-5 texto2 pe-5 d-flex flex-column justify-content-end align-items-end">
-              <h3>ELABORACIÓN ARTESANAL</h3>
-              <p>Elaboramos cada uno de nuestros chocolates de manera completamente artesanal, seleccionando solo los
-                mejores ingredientes para garantizar un sabor y calidad inigualables. Cuidamos cada detalle del proceso,
-                desde la elección de cacao hasta el empaquetado final, para ofrecer una experiencia única en cada pieza.
-                Nuestro compromiso es que cada bocado transmita la pasión y dedicación con la que llevamos adelante esta
-                tradición.</p>
-            </div>
-            <div class="col-xl-7 img2 g-0">
-              <div data-aos="fade-up-left">
-                <img src="media\imgs\chocolatero2.jpg" alt="">
-              </div>
-            </div>
+    </div>
+
+    <!-- SECCIÓN 5: Descubre más -->
+    <div class="sect5" id="sect5">
+      <a href="products.html" class="pr-btn">Ver más</a><br>
+    </div>
+  </main>
+
+  <footer>
+    <!-- RSS -->
+    <div class="social">
+      <a href="#target-content1" id="sub_btn">
+        <figure>
+          <i class="fa-solid fa-location-dot"></i>
+        </figure>
+      </a>
+      <a href="#target-content4" id="sub_btn">
+        <figure>
+          <i class="fa-solid fa-bell"></i>
+        </figure>
+      </a>
+      <a href="https://www.tiktok.com/es/" id="sub_btn">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+      <a href="https://www.instagram.com/" id="sub_btn">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://es.pinterest.com/" id="sub_btn">
+        <i class="fa-brands fa-pinterest"></i>
+      </a>
+      <a href="https://www.facebook.com/" id="sub_btn">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.youtube.com/" id="sub_btn">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="https://twitter.com/" id="sub_btn">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+    </div>
+
+    <!-- LEGAL -->
+    <div class="legal">
+      <div>
+        <p>Contacto</p>
+      </div>
+      <div>
+        <p>Política de privacidad</p>
+      </div>
+      <div>
+        <p>Términos y condiciones</p>
+      </div>
+      <div>
+        <p>All rights reserved 2024 ©</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EXTRAS -->
+  <section id="extra">
+    <div class="flecha">
+      <a href="#">
+        <figure>
+          <i class="fa-solid fa-table-cells" style="color: #331313;"></i>
+        </figure>
+      </a>
+    </div>
+  </section>
+
+  <!-- ERROR -->
+  <section id="error">
+    <div id="target-content">
+      <a href="#error" class="close"></a>
+      <div id="target-inner">
+        <h2>¡UPS!</h2>
+        <br>
+        <p>
+          Sentimos las molestias, al parecer tenemos un problema en el servicio.
+          Intentaremos solucionarlo cuanto antes.
+          <br>
+          Gracias por su paciencia
+        </p>
+        <br>
+      </div>
+    </div>
+  </section>
+
+  <!-- USUARIO -->
+  <section id="form">
+    <div id="target-content3">
+      <a href="#form" class="close3"></a>
+      <div id="target-inner3">
+        <h2>Iniciar Sesión</h2>
+        <br>
+        <div class="input-group mb-3">
+          <span class="input-group-text">@</span>
+          <div class="form-floating is-invalid">
+            <input type="text" class="form-control is-invalid" id="floatingInputGroup2" placeholder="Username" required>
+            <label for="floatingInputGroup2">Username</label>
+          </div>
+          <div class="invalid-feedback">
+            Porfavor, introduzca su nombre de usuario.
           </div>
         </div>
-      </div>
-
-      <!-- SECCION 3: Valores -->
-      <div class="sect3" id="sect3">
-        <div class="container-text-center">
-          <div class="row">
-            <div class="col-xl-12">
-              <h1><span>C</span>ACAO DE ORIGEN</h1>
-            </div>
-            <div class="col-xl-12">
-              <h1><span>E</span>LABORACIÓN ARTESANAL</h1>
-            </div>
-            <div class="col-xl-12">
-              <h1><span>S</span>ELECCIÓN EXCLUSIVA</h1>
-            </div>
-            <div class="col-xl-12">
-              <h1><span>C</span>ALIDAD INIGUALABLE</h1>
-            </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text">?</span>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
           </div>
         </div>
+        <br>
+        <a href="#target-content" class="pr-btn">Enviar</a><br>
+        <a href="#target-content4" class="pr-btn">Suscribirme</a><br>
       </div>
+    </div>
+  </section>
 
-      <!-- SECCION 4: Opinión de nuestros clientes -->
-      <div class="sect4" id="sect4">
-        <div class="container-text-center">
-          <div class="row opiniones">
-            <div class="heading">
-              <h1><span>O</span>PINIONES</h1>
-            </div>
-            <p>4.1 de promedio basado en 254k de reseñas.</p>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-            </div>
-            <br>
+  <!-- INSCRIPCIÓN -->
+  <section id="inscription">
+    <div id="target-content4">
+      <a href="#inscription" class="close4"></a>
+      <div id="target-inner4">
+        <div class="container mt-5">
+          <form class="needs-validation" novalidate id="miFormulario">
             <div class="row">
-              <div class="side">
-                <div>5 estrellas</div>
-              </div>
-              <div class="middle">
-                <div class="bar-container">
-                  <div class="bar-5"></div>
-                </div>
-              </div>
-              <div class="side right">
-                <div>150</div>
-              </div>
-              <div class="side">
-                <div>4 estrellas</div>
-              </div>
-              <div class="middle">
-                <div class="bar-container">
-                  <div class="bar-4"></div>
-                </div>
-              </div>
-              <div class="side right">
-                <div>63</div>
-              </div>
-              <div class="side">
-                <div>3 estrellas</div>
-              </div>
-              <div class="middle">
-                <div class="bar-container">
-                  <div class="bar-3"></div>
-                </div>
-              </div>
-              <div class="side right">
-                <div>15</div>
-              </div>
-              <div class="side">
-                <div>2 estrellas</div>
-              </div>
-              <div class="middle">
-                <div class="bar-container">
-                  <div class="bar-2"></div>
-                </div>
-              </div>
-              <div class="side right">
-                <div>6</div>
-              </div>
-              <div class="side">
-                <div>1 estrellas</div>
-              </div>
-              <div class="middle">
-                <div class="bar-container">
-                  <div class="bar-1"></div>
-                </div>
-              </div>
-              <div class="side right">
-                <div>20</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- SECCIÓN 5: Descubre más -->
-      <div class="sect5" id="sect5">
-        <a href="products.html" class="pr-btn">Ver más</a><br>
-      </div>
-    </main>
-
-    <footer>
-      <!-- RSS -->
-      <div class="social">
-        <a href="#target-content1" id="sub_btn">
-          <figure>
-            <i class="fa-solid fa-location-dot"></i>
-          </figure>
-        </a>
-        <a href="#target-content4" id="sub_btn">
-          <figure>
-            <i class="fa-solid fa-bell"></i>
-          </figure>
-        </a>
-        <a href="https://www.tiktok.com/es/" id="sub_btn">
-          <i class="fa-brands fa-tiktok"></i>
-        </a>
-        <a href="https://www.instagram.com/" id="sub_btn">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://es.pinterest.com/" id="sub_btn">
-          <i class="fa-brands fa-pinterest"></i>
-        </a>
-        <a href="https://www.facebook.com/" id="sub_btn">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://www.youtube.com/" id="sub_btn">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="https://twitter.com/" id="sub_btn">
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-      </div>
-
-      <!-- LEGAL -->
-      <div class="legal">
-        <div>
-          <p>Contacto</p>
-        </div>
-        <div>
-          <p>Política de privacidad</p>
-        </div>
-        <div>
-          <p>Términos y condiciones</p>
-        </div>
-        <div>
-          <p>All rights reserved 2024 ©</p>
-        </div>
-      </div>
-    </footer>
-
-    <!-- EXTRAS -->
-    <section id="extra">
-      <div class="flecha">
-        <a href="#">
-          <figure>
-            <i class="fa-solid fa-table-cells" style="color: #331313;"></i>
-          </figure>
-        </a>
-      </div>
-    </section>
-
-    <!-- ERROR -->
-    <section id="error">
-      <div id="target-content">
-        <a href="#error" class="close"></a>
-        <div id="target-inner">
-          <h2>¡UPS!</h2>
-          <br>
-          <p>
-            Sentimos las molestias, al parecer tenemos un problema en el servicio.
-            Intentaremos solucionarlo cuanto antes.
-            <br>
-            Gracias por su paciencia
-          </p>
-          <br>
-        </div>
-      </div>
-    </section>
-
-    <!-- USUARIO -->
-    <section id="form">
-      <div id="target-content3">
-        <a href="#form" class="close3"></a>
-        <div id="target-inner3">
-          <h2>Iniciar Sesión</h2>
-          <br>
-          <div class="input-group mb-3">
-            <span class="input-group-text">@</span>
-            <div class="form-floating is-invalid">
-              <input type="text" class="form-control is-invalid" id="floatingInputGroup2" placeholder="Username" required>
-              <label for="floatingInputGroup2">Username</label>
-            </div>
-            <div class="invalid-feedback">
-              Porfavor, introduzca su nombre de usuario.
-            </div>
-          </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text">?</span>
-            <div class="form-floating">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-              <label for="floatingPassword">Password</label>
-            </div>
-          </div>
-          <br>
-          <a href="#target-content" class="pr-btn">Enviar</a><br>
-          <a href="#target-content4" class="pr-btn">Suscribirme</a><br>
-        </div>
-      </div>
-    </section>
-
-    <!-- INSCRIPCIÓN -->
-    <section id="inscription">
-      <div id="target-content4">
-        <a href="#inscription" class="close4"></a>
-        <div id="target-inner4">
-          <div class="container mt-5">
-            <form class="needs-validation" novalidate id="miFormulario">
-              <div class="row">
-                <h3>SUSCRIBETE</h3>
-                <div class="col-md-4 mb-3">
-                  <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
-                  <div class="input-group has-validation">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="validationCustomUsername"
-                      aria-describedby="inputGroupPrepend" required>
-                    <div class="invalid-feedback">
-                      Por favor, elija un nombre de usuario.
-                    </div>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <label for="nombre" class="form-label">Nombre de pila</label>
-                  <input type="text" class="form-control" id="nombre" required>
-                  <div class="valid-feedback">¡Se ve bien!</div>
-                  <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
-                </div>
-                <div class="mb-3">
-                  <label for="apellido" class="form-label">Apellido</label>
-                  <input type="text" class="form-control" id="apellido" required>
-                  <div class="valid-feedback">¡Se ve bien!</div>
-                  <div class="invalid-feedback">Por favor, ingrese su apellido.</div>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="validationCustom03" class="form-label">Ciudad</label>
-                  <input type="text" class="form-control" id="validationCustom03" required>
+              <h3>SUSCRIBETE</h3>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input type="text" class="form-control" id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend" required>
                   <div class="invalid-feedback">
-                    Proporcione una ciudad válida.
-                  </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                  <label for="validationCustom05" class="form-label">Código Postal</label>
-                  <input type="text" class="form-control" id="validationCustom05" required>
-                  <div class="invalid-feedback">
-                    Por favor proporcione un código postal válido.
+                    Por favor, elija un nombre de usuario.
                   </div>
                 </div>
               </div>
-              <div class="col-12 mb-3">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                  <label class="form-check-label" for="invalidCheck">
-                    Acepto los términos y condiciones
-                  </label>
-                  <div class="invalid-feedback">
-                    Debes aceptar antes de enviar.
-                  </div>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre de pila</label>
+                <input type="text" class="form-control" id="nombre" required>
+                <div class="valid-feedback">¡Se ve bien!</div>
+                <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
+              </div>
+              <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" required>
+                <div class="valid-feedback">¡Se ve bien!</div>
+                <div class="invalid-feedback">Por favor, ingrese su apellido.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Proporcione una ciudad válida.
                 </div>
               </div>
-              <button class="btn btn-primary" type="submit">Enviar</button>
-              <div id="mensajeExito" class="alert alert-success d-none mt-3" role="alert">¡Formulario enviado con éxito!
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom05" class="form-label">Código Postal</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Por favor proporcione un código postal válido.
+                </div>
               </div>
-            </form>
-          </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Acepto los términos y condiciones
+                </label>
+                <div class="invalid-feedback">
+                  Debes aceptar antes de enviar.
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <div id="mensajeExito" class="alert alert-success d-none mt-3" role="alert">¡Formulario enviado con éxito!
+            </div>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- UBICACIÓN -->
-    <section id="ubi">
-      <div id="target-content1">
-        <a href="#ubi" class="close1"></a>
-        <div id="target-inner1">
-          <h2>¡Ven a conocernos!</h2>
-          <br>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6071.638749072395!2d-3.677021906420912!3d40.4571346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42292a2a67e76f%3A0x7661d685faad2ff8!2sUDIT%20-%20Universidad%20de%20Dise%C3%B1o%2C%20Innovaci%C3%B3n%20y%20Tecnolog%C3%ADa!5e0!3m2!1ses!2ses!4v1730562203383!5m2!1ses!2ses"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <br>
-          <br>
-          <a href="https://www.google.es/maps/place/UDIT+-+Universidad+de+Dise%C3%B1o,+Innovaci%C3%B3n+y+Tecnolog%C3%ADa/@40.4571387,-3.670075,17z/data=!3m1!4b1!4m6!3m5!1s0xd42292a2a67e76f:0x7661d685faad2ff8!8m2!3d40.4571346!4d-3.6674947!16s%2Fg%2F12lqj5x_g?hl=es&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
-            class="pr-btn">Buscar</a><br>
-        </div>
+  <!-- UBICACIÓN -->
+  <section id="ubi">
+    <div id="target-content1">
+      <a href="#ubi" class="close1"></a>
+      <div id="target-inner1">
+        <h2>¡Ven a conocernos!</h2>
+        <br>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6071.638749072395!2d-3.677021906420912!3d40.4571346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42292a2a67e76f%3A0x7661d685faad2ff8!2sUDIT%20-%20Universidad%20de%20Dise%C3%B1o%2C%20Innovaci%C3%B3n%20y%20Tecnolog%C3%ADa!5e0!3m2!1ses!2ses!4v1730562203383!5m2!1ses!2ses"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+        <br>
+        <a href="https://www.google.es/maps/place/UDIT+-+Universidad+de+Dise%C3%B1o,+Innovaci%C3%B3n+y+Tecnolog%C3%ADa/@40.4571387,-3.670075,17z/data=!3m1!4b1!4m6!3m5!1s0xd42292a2a67e76f:0x7661d685faad2ff8!8m2!3d40.4571346!4d-3.6674947!16s%2Fg%2F12lqj5x_g?hl=es&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
+          class="pr-btn">Buscar</a><br>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SUSCRIBCIÓN -->
-    <section id="subscribe">
-      <div id="target-content2">
-        <a href="#subscribe" class="close2"></a>
-        <div id="target-inner2">
-          <h2>¡No te pierdas nada!</h2>
-          <br>
-          <P> Regístrate y recibirás una selección cada semana de las mejores recetas con chocolate, junto a las novedades
-            en el mundo del cacao y la cocina. </P>
-          <br>
-          <input type="email" id="email_sub">
-          <br>
-          <br>
-          <a href="#" class="pr-btn">Enviar</a><br>
-        </div>
+  <!-- SUSCRIBCIÓN -->
+  <section id="subscribe">
+    <div id="target-content2">
+      <a href="#subscribe" class="close2"></a>
+      <div id="target-inner2">
+        <h2>¡No te pierdas nada!</h2>
+        <br>
+        <P> Regístrate y recibirás una selección cada semana de las mejores recetas con chocolate, junto a las novedades
+          en el mundo del cacao y la cocina. </P>
+        <br>
+        <input type="email" id="email_sub">
+        <br>
+        <br>
+        <a href="#" class="pr-btn">Enviar</a><br>
       </div>
-    </section>
+    </div>
+  </section>
 
 
-    <!-- ENLACES -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+  <!-- ENLACES -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 
 </html>
