@@ -14,42 +14,40 @@ $(document).ready(function() {
         toast.hide();
     });
 
-    //BUSCADOR
-    document.getElementById("search-icon").addEventListener("click", function() {
-        var searchBar = document.getElementById("search-bar");
-        if (searchBar.style.display === "none" || searchBar.style.display === "") {
-            searchBar.style.display = "block"; // Muestra la barra de búsqueda
-            searchBar.focus(); // Opcional: enfocar la barra de búsqueda
-        } else {
-            searchBar.style.display = "none"; // Oculta la barra de búsqueda
-        }
-    });
-    
-    // CARRUSEL SECCION 1
-    $('.main-carousel').flickity({
-        cellAlign: 'left',
-        contain: true,
-        freeScroll: true,
-        prevNextButtons: false,
+    // BUSCADOR
+    $('#search').on('keyup', function() {
+        var value = $(this).val().toLowerCase();
+        $('.carousel-cell').filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
     });
 
-    // BARRA DE PROGRESO DEL CARRUSEL
-    $('.main-carousel').on('select.flickity', function(event, index) {
-        var totalCells = $('.main-carousel .carousel-cell').length; // Total number of cells
-        var progressWidth = ((index + 1) / totalCells) * 100; // Calculate progress width as a percentage
-        $('.progress-fill').css('width', progressWidth + '%'); // Update the width of the progress fill
+    // FLICKITY
+    var jq = jQuery.noConflict();
+    jq(document).ready(function() {
+        // Inicializar Flickity
+        var $mainCarousel = jq('.carousel').flickity({
+            cellAlign: 'left',
+            contain: true,
+            freeScroll: true,
+            prevNextButtons: false,
+        });
+
+        var totalCells = $mainCarousel.find('.carousel-cell').length;
+
+        // BARRA DE PROGRESO DEL CARRUSEL
+        $mainCarousel.on('select.flickity', function(event, index) {
+            var progressWidth = ((index + 1) / totalCells) * 100; // Calcular el ancho del progreso como un porcentaje
+            jq('.progress-fill').css('width', progressWidth + '%'); // Actualizar el ancho del progreso
+        });
+
+        // Trigger the select event on initialization to set the initial progress line width
+        var initialIndex = $mainCarousel.data('flickity').selectedIndex;
+        var initialProgressWidth = ((initialIndex + 1) / totalCells) * 100;
+        jq('.progress-fill').css('width', initialProgressWidth + '%');
     });
 
-    // Trigger the select event on initialization to set the initial progress line width
-    var initialIndex = $('.main-carousel').data('flickity').selectedIndex;
-    var initialProgressWidth = ((initialIndex + 1) / totalCells) * 100;
-    $('.progress-fill').css('width', initialProgressWidth + '%');
-});
-
-//INSCRIPCIÓN
-document.addEventListener('DOMContentLoaded', function() {
-    'use strict';
-
+    // INSCRIPCIÓN
     const formulario = document.getElementById('miFormulario');
     const mensajeExito = document.getElementById('mensajeExito');
     const botonEnviar = formulario.querySelector('button');

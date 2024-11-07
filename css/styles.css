@@ -461,7 +461,7 @@ header {
 
 .tarjeta-sec2 .card-img-top {
     border-radius: 0;
-    height: 20em;
+    height: 25em;
     width: 100%; 
     object-fit: cover;
 }
