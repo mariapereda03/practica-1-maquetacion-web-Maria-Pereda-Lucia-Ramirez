@@ -438,6 +438,9 @@ header {
     font-family: 'Oswald', serif;
     font-size: 1.5rem;
     color: #EDE6D6;
+    width: calc(50% - 20px); /* Ajusta el ancho para mostrar 2 tarjetas */
+    margin: 10px; /* Espaciado entre tarjetas */
+    transition: transform 0.3s ease;
 }
 
 .tarjeta-sec2 {
@@ -457,6 +460,9 @@ header {
 
 .tarjeta-sec2 .card-img-top {
     border-radius: 0;
+    height: 20em;
+    width: 100%; 
+    object-fit: cover;
 }
 
 .progress-line2 {
