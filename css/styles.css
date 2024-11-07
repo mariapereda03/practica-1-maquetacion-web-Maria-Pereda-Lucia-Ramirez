@@ -431,7 +431,6 @@ header {
     letter-spacing: 15px;
     line-height: 5px;
 }
-
 /* CARRUSEL */
 .tarjeta-sec2 {
     background-color: transparent;
@@ -466,27 +465,24 @@ header {
     object-fit: cover;
 }
 
-.bombon {
-    margin-top: 5em;
-}
-
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-    justify-content: center;
-}
-
-.progress-line {
+.progress-line2 {
     height: 5px;
     background-color: #EDE6D6;
     margin-top: 10px;
-    margin-inline: 15em;
     width: 50%;
+    position: relative;
     border-radius: 3px;
+}
+.progress-fill2 {
+    height: 100%; /* Fill the height of the progress line */
+    background-color: #7a6f58; /* Color of the progress fill */
+    width: 0; /* Start with 0 width */
+    transition: width 0.5s; /* Smooth transition */
+    border-radius: 3px;
+}
+
+.bombon {
+    margin-top: 5em;
 }
 
 /* SECCIÓN 2: Para paladares con buen gusto */
