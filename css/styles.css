@@ -103,17 +103,17 @@ header {
 }
 
 #search-icon {
-    background: none; /* No background */
-    border: none; /* No border */
-    cursor: pointer; /* Changes cursor on hover */
-    font-size: 24px; /* Adjusts icon size */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
 }
 
 #search-bar {
-    width: 200px; /* Adjust width as needed */
+    width: 200px;
     padding: 5px;
-    margin-left: 10px; /* Space between icon and search bar */
-    display: none; /* Hides the search bar initially */
+    margin-left: 10px;
+    display: none;
 }
 
 /* iconos compra y usuario */
@@ -131,7 +131,6 @@ header {
 
 .icons div:hover,
 .icons i:hover {
-    /* Cambia el color del borde al pasar el ratón sobre el elemento */
     color: rgb(189, 113, 113);
 }
 
@@ -176,7 +175,6 @@ header {
 }
 
 /* CARRUSEL */
-
 .tarjeta-sec1 {
     background-color: transparent;
     border-color: transparent;
@@ -186,14 +184,12 @@ header {
 }
 
 .tarjeta-sec1 {
-    transition: transform 0.3s ease; /* Transición suave al cambiar el tamaño */
+    transition: transform 0.3s ease;
 }
 
 .tarjeta-sec1:hover {
-    transform: scale(1.05); /* Aumentar el tamaño al 110% */
-
+    transform: scale(1.05);
 }
-
 
 .tarjeta-sec1 .card-text {
     font-family: "Montserrat", sans-serif;
@@ -208,7 +204,7 @@ header {
 
 /* Linea de progreso */
 .flickity-page-dots {
-display: none;
+    display: none;
 }
 
 .progress-line {
@@ -415,12 +411,12 @@ display: none;
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
 }
 
-    
+   
+
 
 /* PAGINA PRODUCTOS */
 
 /* Sección 1: Nuestras mejores exquisiteces */
-
 .sect1-p2 h1 {
     font-family: 'Oswald', serif;
     font-size: 7rem;
@@ -435,9 +431,55 @@ display: none;
     letter-spacing: 15px;
     line-height: 5px;
 }
+/* CARRUSEL */
+.tarjeta-sec2 {
+    background-color: transparent;
+    border-color: transparent;
+    font-family: 'Oswald', serif;
+    font-size: 1.5rem;
+    color: #EDE6D6;
+}
+
+.tarjeta-sec2 {
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-sec2:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta-sec2 .card-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+
+.tarjeta-sec2 .card-img-top {
+    border-radius: 0;
+}
+
+.progress-line2 {
+    height: 5px;
+    background-color: #EDE6D6;
+    margin-top: 10px;
+    width: 50%;
+    position: relative;
+    border-radius: 3px;
+}
+.progress-fill2 {
+    height: 100%; /* Fill the height of the progress line */
+    background-color: #7a6f58; /* Color of the progress fill */
+    width: 0; /* Start with 0 width */
+    transition: width 0.5s; /* Smooth transition */
+    border-radius: 3px;
+}
+
+.bombon {
+    margin-top: 5em;
+}
 
 /* SECCIÓN 2: Para paladares con buen gusto */
-
 .sect2-p2 {
     background-color: #EDE6D6;
     color: #261616;

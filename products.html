@@ -38,67 +38,193 @@
 </head>
 
 <body>
+    <header>
+        <!-- MENÚ -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <div class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">Sobre Nosotros</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="index.html #sect1">La Esencia del Cacao Elevada al Arte</a></li>
+                    <li><a class="dropdown-item" href="index.html #sect2">La Esencia de Nuestra Tradición</a></li>
+                    <li><a class="dropdown-item" href="index.html #sect3">Cacao de origen</a></li>
+                    <li><a class="dropdown-item" href="index.html #sect4">Opiniones</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#sect1-p2">Nuestras Mejores Exquisiteces</a></li>
+                    <li><a class="dropdown-item" href="#sect2-p2">Para Paladares con Buen Gusto</a></li>
+                    <li><a class="dropdown-item" href="#sect3-p2">Delicatesens Secretas</a></li>
+                  </ul>
+                </li>
+                <div id="search-container">
+                  <button id="search-icon" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <input type="text" id="search-bar" placeholder="Buscar..." style="display: none;">
+                </div>
+              </ul>
+    
+              <!-- LOGO -->
+              <a class="navbar-brand" href="#"><img class="logo-nav" src="media\imgs\logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <!-- ICONS -->
+              <div class="icons">
+                <a class="navbar-brand" href="#target-content">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </a>
+                <a class="navbar-brand" href="#target-content3">
+                  <i class="fa-solid fa-user"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- VIDEO -->
+        <div class="ratio ratio-16x9">
+          <video src="media\video\video-header.mp4" autoplay loop muted></video>
+        </div>
+    </header>
     <main>
         <!-- SECCIÓN 1: nuestras mejores exquisiteces -->
-        <div class="sect1-p2 pb-5">
+        <div class="sect1-p2 pb-5" id="sect1-p2">
             <div class="container-fluid text-center">
                 <div class="row">
                     <div class="col-xl-12">
                         <h1><span>N</span>UESTRAS <span>M</span>EJORES <span>E</span>XQUISITECES</h1>
                     </div>
-                    <div class="col-xl-12">
-                        Column
+                    <div class="col-xl-3 columna2">
+                      <h3 class="texto-col2">Nuestra<br>recomendación</h3>
                     </div>
-                    <div class="col p-0 d-flex justify-content-center">
-                        <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
+                    <div class="col-xl-9">
+                      <!-- CARRUSEL -->
+                      <div class="main-carousel">
+                        <div class="carousel-cell">
+                          <div class="card mx-2 tarjeta-sec2" style="width: 18rem;">
+                            <img src="media\imgs\chocolate-frambuesa.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h3 class="card-title">CONCORDIA</h5>
+                                <p class="card-text">Intenso cacao Arriba ecuatoriano con frambuesas Heritage</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-cell">
+                          <div class="card mx-2 tarjeta-sec2" style="width: 18rem;">
                             <img src="media\imgs\trufa-pistacho.jpg" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h3 class="card-title">OMNIA</h5>
-                                    <p class="card-text">Chocolate blanco Ivorie, violetas cristalizadas de Toulouse y
-                                        relleno cremoso
-                                        de marshmallow.</p>
+                              <h3 class="card-title">MIROR</h5>
+                                <p class="card-text">Trufa de cacao Nacional con pistachos de Bronte</p>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col p-0 d-flex justify-content-center">
-                        <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
-                            <img src="media\imgs\trufa-pistacho.jpg" class="card-img-top" alt="">
+                        <div class="carousel-cell">
+                          <div class="card mx-2 tarjeta-sec2" style="width: 18rem;">
+                            <img src="media\imgs\chocolate-fresa.jpg" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h3 class="card-title">OMNIA</h5>
-                                    <p class="card-text">Chocolate blanco Ivorie, violetas cristalizadas de Toulouse y
-                                        relleno cremoso
-                                        de marshmallow.</p>
+                              <h3 class="card-title">HARMONIA</h5>
+                                <p class="card-text">Cacao Nacional y fresas de Jerez</p>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col p-0 d-flex justify-content-center">
-                        <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
-                            <img src="media\imgs\trufa-pistacho.jpg" class="card-img-top" alt="">
+                        <div class="carousel-cell">
+                          <div class="card mx-2 tarjeta-sec2" style="width: 18rem;">
+                            <img src="media\imgs\chocolate-mango.jpg" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h3 class="card-title">OMNIA</h5>
-                                    <p class="card-text">Chocolate blanco Ivorie, violetas cristalizadas de Toulouse y
-                                        relleno cremoso
-                                        de marshmallow.</p>
+                              <h3 class="card-title">AMORALIS</h5>
+                                <p class="card-text">Intenso cacao Arriba ecuatoriano y mango Alphonso</p>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col p-0 d-flex justify-content-center">
-                        <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
-                            <img src="media\imgs\trufa-pistacho.jpg" class="card-img-top" alt="">
+                        <div class="carousel-cell">
+                          <div class="card mx-2 tarjeta-sec2" style="width: 18rem;">
+                            <img src="media\imgs\bocados-violeta.jpg" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h3 class="card-title">OMNIA</h5>
-                                    <p class="card-text">Chocolate blanco Ivorie, violetas cristalizadas de Toulouse y
-                                        relleno cremoso
-                                        de marshmallow.</p>
+                              <h3 class="card-title">OMNIA</h5>
+                                <p class="card-text">Chocolate blanco Ivorie, violetas cristalizadas de Toulouse y relleno cremoso
+                                  de marshmallow.</p>
                             </div>
+                          </div>
                         </div>
+                        <div class="carousel-cell">
+                          <div class="card mx-2 tarjeta-sec2" style="width: 18rem;">
+                            <img src="media\imgs\bombon-macadamia.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h3 class="card-title">AURUM</h5>
+                                <p class="card-text">Cacao Arriba, nuez de macadamia y maracuyá fresca.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Progress Line -->
+                      <div class="progress-line2">
+                        <div class="progress-fill2"></div>
+                      </div>
                     </div>
                 </div>
+                <div class="bombon">
+                    <div class="row">
+                        <div class="col p-0 d-flex justify-content-center">
+                            <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
+                                <img src="media\imgs\trufa-pistacho.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h3 class="card-title">OMNIA</h5>
+                                        <p class="card-text">Chocolate blanco Ivorie, violetas cristalizadas de Toulouse y
+                                            relleno cremoso
+                                            de marshmallow.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-0 d-flex justify-content-center">
+                            <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
+                                <img src="media\imgs\trufa-pistacho.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h3 class="card-title">OMNIA</h5>
+                                        <p class="card-text">Chocolate blanco Ivorie, violetas cristalizadas de Toulouse y
+                                            relleno cremoso
+                                            de marshmallow.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-0 d-flex justify-content-center">
+                            <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
+                                <img src="media\imgs\trufa-pistacho.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h3 class="card-title">OMNIA</h5>
+                                        <p class="card-text">Chocolate blanco Ivorie, violetas cristalizadas de Toulouse y
+                                            relleno cremoso
+                                            de marshmallow.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-0 d-flex justify-content-center">
+                            <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
+                                <img src="media\imgs\trufa-pistacho.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h3 class="card-title">OMNIA</h5>
+                                        <p class="card-text">Chocolate blanco Ivorie, violetas cristalizadas de Toulouse y
+                                            relleno cremoso
+                                            de marshmallow.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
             </div>
         </div>
 
         <!-- SECCIÓN 2: Para paladares con buen gusto -->
-        <div class="sect2-p2">
+        <div class="sect2-p2" id="sect2-p2">
             <div class="container-fluid text-center p-0">
                 <div class="row">
                   <div class="col-xl-12">
@@ -138,6 +264,10 @@
                       </div>
                 </div>
               </div>
+        </div>
+        <!-- SECCIÓN 3: Delicatesens Secretas -->
+        <div class="sect3-p2" id="sect3-p2">
+            <p>Delicatesens Secretas</p>
         </div>
         
     </main>
@@ -190,6 +320,180 @@
             </div>
         </div>
     </footer>
+    
+  <!-- EXTRAS -->
+  <section id="extra">
+    <div class="flecha">
+      <a href="#">
+        <figure>
+          <i class="fa-solid fa-table-cells" style="color: #331313;"></i>
+        </figure>
+      </a>
+    </div>
+  </section>
+
+  <!-- ERROR -->
+  <section id="error">
+    <div id="target-content">
+      <a href="#error" class="close"></a>
+      <div id="target-inner">
+        <h2>¡UPS!</h2>
+        <br>
+        <p>
+          Sentimos las molestias, al parecer tenemos un problema en el servicio.
+          Intentaremos solucionarlo cuanto antes.
+          <br>
+          Gracias por su paciencia
+        </p>
+        <br>
+      </div>
+    </div>
+  </section>
+
+  <!-- USUARIO -->
+  <section id="form">
+    <div id="target-content3">
+      <a href="#form" class="close3"></a>
+      <div id="target-inner3">
+        <h2>Iniciar Sesión</h2>
+        <br>
+        <div class="input-group mb-3">
+          <span class="input-group-text">@</span>
+          <div class="form-floating is-invalid">
+            <input type="text" class="form-control is-invalid" id="floatingInputGroup2" placeholder="Username" required>
+            <label for="floatingInputGroup2">Username</label>
+          </div>
+          <div class="invalid-feedback">
+            Porfavor, introduzca su nombre de usuario.
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text">?</span>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+        </div>
+        <br>
+        <a href="#target-content" class="pr-btn">Enviar</a><br>
+        <a href="#target-content4" class="pr-btn">Suscribirme</a><br>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSCRIPCIÓN -->
+  <section id="inscription">
+    <div id="target-content4">
+      <a href="#inscription" class="close4"></a>
+      <div id="target-inner4">
+        <div class="container mt-5">
+          <form class="needs-validation" novalidate id="miFormulario">
+            <div class="row">
+              <h3>SUSCRIBETE</h3>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input type="text" class="form-control" id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Por favor, elija un nombre de usuario.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre de pila</label>
+                <input type="text" class="form-control" id="nombre" required>
+                <div class="valid-feedback">¡Se ve bien!</div>
+                <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
+              </div>
+              <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" required>
+                <div class="valid-feedback">¡Se ve bien!</div>
+                <div class="invalid-feedback">Por favor, ingrese su apellido.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Proporcione una ciudad válida.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom05" class="form-label">Código Postal</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Por favor proporcione un código postal válido.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Acepto los términos y condiciones
+                </label>
+                <div class="invalid-feedback">
+                  Debes aceptar antes de enviar.
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <div id="mensajeExito" class="alert alert-success d-none mt-3" role="alert">¡Formulario enviado con éxito!
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section id="ubi">
+    <div id="target-content1">
+      <a href="#ubi" class="close1"></a>
+      <div id="target-inner1">
+        <h2>¡Ven a conocernos!</h2>
+        <br>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6071.638749072395!2d-3.677021906420912!3d40.4571346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42292a2a67e76f%3A0x7661d685faad2ff8!2sUDIT%20-%20Universidad%20de%20Dise%C3%B1o%2C%20Innovaci%C3%B3n%20y%20Tecnolog%C3%ADa!5e0!3m2!1ses!2ses!4v1730562203383!5m2!1ses!2ses"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+        <br>
+        <a href="https://www.google.es/maps/place/UDIT+-+Universidad+de+Dise%C3%B1o,+Innovaci%C3%B3n+y+Tecnolog%C3%ADa/@40.4571387,-3.670075,17z/data=!3m1!4b1!4m6!3m5!1s0xd42292a2a67e76f:0x7661d685faad2ff8!8m2!3d40.4571346!4d-3.6674947!16s%2Fg%2F12lqj5x_g?hl=es&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
+          class="pr-btn">Buscar</a><br>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUSCRIBCIÓN -->
+  <section id="subscribe">
+    <div id="target-content2">
+      <a href="#subscribe" class="close2"></a>
+      <div id="target-inner2">
+        <h2>¡No te pierdas nada!</h2>
+        <br>
+        <P> Regístrate y recibirás una selección cada semana de las mejores recetas con chocolate, junto a las novedades
+          en el mundo del cacao y la cocina. </P>
+        <br>
+        <input type="email" id="email_sub">
+        <br>
+        <br>
+        <a href="#" class="pr-btn">Enviar</a><br>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ENLACES -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
