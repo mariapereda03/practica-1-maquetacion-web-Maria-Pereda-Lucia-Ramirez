@@ -480,7 +480,7 @@ header {
     text-align: center;
 }
 
-/* Media Queries para Opinión */
+/* Media Queries para Responsividad */
 @media (max-width: 1200px) {
     .heading h1 {
         font-size: 6rem; /* Reduce el tamaño del texto */
@@ -507,47 +507,47 @@ header {
 
 @media (max-width: 768px) {
     .heading h1 {
-        font-size: 5rem;
+        font-size: 5rem; /* Reduce el tamaño del texto */
     }
 
     .heading span {
-        font-size: 6rem;
-        letter-spacing: 8px;
+        font-size: 6rem; /* Reduce el tamaño del texto del span */
+        letter-spacing: 8px; /* Reduce el espaciado de letras */
     }
 
     .side {
-        width: 100%;
-        margin-top: 5px;
+        width: 100%; /* Cambia a ancho completo */
+        margin-top: 5px; /* Reduce el margen superior */
     }
 
     .middle {
-        width: 100%;
-        margin-top: 5px;
+        width: 100%; /* Cambia a ancho completo */
+        margin-top: 5px; /* Reduce el margen superior */
     }
 
     .container-text-center-4 {
-        padding: 3em;
-        margin: 10px;
+        padding: 3em; /* Reduce el padding */
+        margin: 10px; /* Reduce el margen */
     }
 }
 
 @media (max-width: 480px) {
     .heading h1 {
-        font-size: 4rem;
+        font-size: 4rem; /* Reduce el tamaño del texto */
     }
 
     .heading span {
-        font-size: 5rem;
-        letter-spacing: 5px;
+        font-size: 5rem; /* Reduce el tamaño del texto del span */
+        letter-spacing: 5px; /* Reduce el espaciado de letras */
     }
 
     .bar-container {
-        padding: 1em;
+        padding: 1em; /* Ajusta el padding */
     }
 
     .container-text-center-4 {
-        padding: 2em;
-        margin: 5px;
+        padding: 2em; /* Reduce el padding */
+        margin: 5px; /* Mantiene el margen reducido */
     }
 }
 
@@ -593,6 +593,7 @@ header {
 
 
 /* PAGINA PRODUCTOS */
+
 /* Sección 1: Nuestras mejores exquisiteces */
 .sect1-p2 h1 {
     font-family: 'Oswald', serif;
@@ -617,7 +618,9 @@ header {
     font-size: 1.5rem;
     color: #EDE6D6;
     width: calc(50% - 20px);
+    /* Ajusta el ancho para mostrar 2 tarjetas */
     margin: 10px;
+    /* Espaciado entre tarjetas */
     transition: transform 0.3s ease;
 }
 
@@ -641,6 +644,27 @@ header {
     height: 20em;
     width: 100%;
     object-fit: cover;
+}
+
+.progress-line2 {
+    height: 5px;
+    background-color: #EDE6D6;
+    margin-top: 10px;
+    width: 50%;
+    position: relative;
+    border-radius: 3px;
+}
+
+.progress-fill2 {
+    height: 100%;
+    /* Fill the height of the progress line */
+    background-color: #7a6f58;
+    /* Color of the progress fill */
+    width: 0;
+    /* Start with 0 width */
+    transition: width 0.5s;
+    /* Smooth transition */
+    border-radius: 3px;
 }
 
 .bombon {
@@ -721,7 +745,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #261616;
+    background-color: #26161682;
     color: #EDE6D6;
     text-align: center;
     padding-top: 40%;
