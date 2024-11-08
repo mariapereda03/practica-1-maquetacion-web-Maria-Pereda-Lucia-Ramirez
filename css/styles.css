@@ -700,6 +700,14 @@ header {
     transition: transform 0.3s ease;
 }
 
+#hover-video {
+    transition: transform 0.3s ease;
+}
+
+#hover-video:hover {
+    transform: scale(1.03);
+}s
+
 .hover-efecto img {
     display: block;
     width: 100%;
