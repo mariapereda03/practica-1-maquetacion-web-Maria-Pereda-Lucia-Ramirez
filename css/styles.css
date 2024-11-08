@@ -4,11 +4,6 @@
     box-sizing: border-box
 }
 
-/* :root {
-    --clr-primary: #261616;
-    --clr-primary: #EDE6D6;
-} */
-
 body {
     margin: 0;
     background-color: #261616;
@@ -298,66 +293,66 @@ header {
     text-align: center;
 }
 
-/* Media Queries para Responsividad */
+/* Media Queries para Valores */
 @media (max-width: 1200px) {
     .sect3 {
-        padding: 8em; /* Reduce el padding */
+        padding: 8em;
     }
 
     .sect3 h1 {
-        font-size: 5em; /* Reduce el tamaño del texto */
+        font-size: 5em;
     }
 
     .sect3 span {
-        font-size: 6rem; /* Reduce el tamaño del texto del span */
-        letter-spacing: 10px; /* Reduce el espaciado de letras */
+        font-size: 6rem;
+        letter-spacing: 10px;
     }
 
     .container-text-center {
-        padding: 4em; /* Reduce el padding */
-        margin: 10px; /* Reduce el margen */
+        padding: 4em;
+        margin: 10px;
     }
 }
 
 @media (max-width: 768px) {
     .sect3 {
-        padding: 5em; /* Reduce el padding aún más */
+        padding: 5em;
     }
 
     .sect3 h1 {
-        font-size: 4em; /* Reduce el tamaño del texto */
+        font-size: 4em;
     }
 
     .sect3 span {
-        font-size: 5rem; /* Reduce el tamaño del texto del span */
-        letter-spacing: 8px; /* Reduce el espaciado de letras */
+        font-size: 5rem;
+        letter-spacing: 8px;
     }
 
     .container-text-center {
-        padding: 3em; /* Reduce el padding */
-        margin: 5px; /* Reduce el margen */
-        border-radius: 3em; /* Reduce el radio del borde */
+        padding: 3em;
+        margin: 5px;
+        border-radius: 3em;
     }
 }
 
 @media (max-width: 480px) {
     .sect3 {
-        padding: 3em; /* Reduce el padding para pantallas muy pequeñas */
+        padding: 3em;
     }
 
     .sect3 h1 {
-        font-size: 3em; /* Reduce el tamaño del texto */
+        font-size: 3em;
     }
 
     .sect3 span {
-        font-size: 4rem; /* Reduce el tamaño del texto del span */
-        letter-spacing: 5px; /* Reduce el espaciado de letras */
+        font-size: 4rem;
+        letter-spacing: 5px;
     }
 
     .container-text-center {
-        padding: 2em; /* Reduce el padding */
-        margin: 5px; /* Mantiene el margen reducido */
-        border-radius: 2em; /* Reduce el radio del borde */
+        padding: 2em;
+        margin: 5px;
+        border-radius: 2em;
     }
 }
 
@@ -459,74 +454,74 @@ header {
     text-align: center;
 }
 
-/* Media Queries para Responsividad */
+/* Media Queries para Opinión */
 @media (max-width: 1200px) {
     .heading h1 {
-        font-size: 6rem; /* Reduce el tamaño del texto */
+        font-size: 6rem;
     }
 
     .heading span {
-        font-size: 7rem; /* Reduce el tamaño del texto del span */
-        letter-spacing: 10px; /* Reduce el espaciado de letras */
+        font-size: 7rem;
+        letter-spacing: 10px;
     }
 
     .side {
-        width: 25%; /* Aumenta el ancho para pantallas más pequeñas */
+        width: 25%;
     }
 
     .middle {
-        width: 50%; /* Reduce el ancho */
+        width: 50%;
     }
 
     .container-text-center-4 {
-        padding: 4em; /* Reduce el padding */
-        margin: 15px; /* Reduce el margen */
+        padding: 4em;
+        margin: 15px;
     }
 }
 
 @media (max-width: 768px) {
     .heading h1 {
-        font-size: 5rem; /* Reduce el tamaño del texto */
+        font-size: 5rem;
     }
 
     .heading span {
-        font-size: 6rem; /* Reduce el tamaño del texto del span */
-        letter-spacing: 8px; /* Reduce el espaciado de letras */
+        font-size: 6rem;
+        letter-spacing: 8px;
     }
 
     .side {
-        width: 100%; /* Cambia a ancho completo */
-        margin-top: 5px; /* Reduce el margen superior */
+        width: 100%;
+        margin-top: 5px;
     }
 
     .middle {
-        width: 100%; /* Cambia a ancho completo */
-        margin-top: 5px; /* Reduce el margen superior */
+        width: 100%;
+        margin-top: 5px;
     }
 
     .container-text-center-4 {
-        padding: 3em; /* Reduce el padding */
-        margin: 10px; /* Reduce el margen */
+        padding: 3em;
+        margin: 10px;
     }
 }
 
 @media (max-width: 480px) {
     .heading h1 {
-        font-size: 4rem; /* Reduce el tamaño del texto */
+        font-size: 4rem;
     }
 
     .heading span {
-        font-size: 5rem; /* Reduce el tamaño del texto del span */
-        letter-spacing: 5px; /* Reduce el espaciado de letras */
+        font-size: 5rem;
+        letter-spacing: 5px;
     }
 
     .bar-container {
-        padding: 1em; /* Ajusta el padding */
+        padding: 1em;
     }
 
     .container-text-center-4 {
-        padding: 2em; /* Reduce el padding */
-        margin: 5px; /* Mantiene el margen reducido */
+        padding: 2em;
+        margin: 5px;
     }
 }
 
@@ -625,27 +620,6 @@ header {
     object-fit: cover;
 }
 
-.progress-line2 {
-    height: 5px;
-    background-color: #EDE6D6;
-    margin-top: 10px;
-    width: 50%;
-    position: relative;
-    border-radius: 3px;
-}
-
-.progress-fill2 {
-    height: 100%;
-    /* Fill the height of the progress line */
-    background-color: #7a6f58;
-    /* Color of the progress fill */
-    width: 0;
-    /* Start with 0 width */
-    transition: width 0.5s;
-    /* Smooth transition */
-    border-radius: 3px;
-}
-
 .bombon {
     margin-top: 5em;
 }
@@ -724,10 +698,9 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #26161682;
+    background-color: #261616;
     color: #EDE6D6;
     text-align: center;
-    padding-top: 40%;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -738,6 +711,8 @@ header {
 
 .overlay span {
     display: inline-block;
+    margin-inline: 10em;
+    margin-top: 15em;
 }
 
 .overlay p {
@@ -751,6 +726,13 @@ header {
     font-size: 7rem;
     padding: 2rem;
     text-align: center;
+}
+
+.sect3-p2 h1 span {
+    font-family: "Parisienne", cursive;
+    font-size: 8rem;
+    letter-spacing: 15px;
+    line-height: 5px;
 }
 
 /* CARRUSEL 3 */
@@ -793,6 +775,7 @@ header {
     width: 100%;
     object-fit: cover;
 }
+
 
 /* footer */
 footer {
@@ -1104,6 +1087,10 @@ footer>p>a {
 }
 
 /*INSCRIPCIÓN*/
+#inscription {
+    font-family: "montserrat", sans-serif;
+}
+
 #inscription #target-content4 {
     position: fixed;
     top: 0;
@@ -1179,7 +1166,7 @@ footer>p>a {
 
 #inscription form fieldset fieldset div div {
     display: flex;
-    flex-direction: row;
+    flex-direction: center;
 }
 
 .was-validated .form-control:valid {
@@ -1188,6 +1175,10 @@ footer>p>a {
 
 .was-validated .form-control:invalid {
     border-color: #dc3545;
+}
+
+.mt-5 {
+    margin-top: 0rem !important;
 }
 
 /*COOKIES*/

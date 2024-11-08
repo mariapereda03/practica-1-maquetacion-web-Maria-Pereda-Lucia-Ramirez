@@ -33,13 +33,6 @@ $(document).ready(function() {
         prevNextButtons: false,
     });
 
-    // BARRA DE PROGRESO DEL CARRUSEL
-    $('.main-carousel').on('select.flickity', function(event, index) {
-        var totalCells = $('.main-carousel .carousel-cell').length; // Total number of cells
-        var progressWidth = ((index + 1) / totalCells) * 100; // Calculate progress width as a percentage
-        $('.progress-fill').css('width', progressWidth + '%'); // Update the width of the progress fill
-    });
-
     // Trigger the select event on initialization to set the initial progress line width
     var initialIndex = $('.main-carousel').data('flickity').selectedIndex;
     var initialProgressWidth = ((initialIndex + 1) / totalCells) * 100;
