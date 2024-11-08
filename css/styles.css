@@ -28,17 +28,19 @@ header {
 /* MENÚ */
 .navbar {
     position: fixed;
-    top: 0em;
-    right: 0em;
-    left: 0em;
+    top: 0;
+    right: 0;
+    left: 0;
     display: flex;
     align-items: center;
     padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
-    z-index: 5;
+    z-index: 1000;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .navbar-nav {
-    --bs-nav-link-disabled-color: #ede6d68a;
+    display: flex;
 }
 
 .navbar-brand {
@@ -63,14 +65,6 @@ header {
     color: #EDE6D6;
 }
 
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav .dropdown-menu {
-        position: absolute;
-        background-color: #EDE6D6;
-        color: #261616;
-    }
-}
-
 /* ICONS */
 .navbar-nav {
     display: flex;
@@ -86,7 +80,6 @@ header {
 
 .navbar-nav div:hover,
 .navbar-nav i:hover {
-    /* Cambia el color del borde al pasar el ratón sobre el elemento */
     color: rgb(189, 113, 113);
 }
 
@@ -138,6 +131,34 @@ header {
     font-size: 20px;
     color: #ede6d6;
     margin: 1rem;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Cambia la dirección del menú */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    .navbar-nav {
+        width: 100%; /* Ocupa el ancho completo */
+        justify-content: space-around; /* Espaciado entre los elementos */
+    }
+
+    #search-container {
+        width: 100%; /* Asegúrate de que el contenedor de búsqueda ocupe el ancho completo */
+        justify -content: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    #search-bar {
+        display: block; /* Haz visible el campo de búsqueda en pantallas pequeñas */
+        width: 100%; /* Asegúrate de que ocupe el ancho completo */
+        margin-top: 10px; /* Agrega un margen para separación */
+    }
+
+    .icons {
+        width: 100%; /* Asegúrate de que los iconos ocupen el ancho completo */
+        justify-content: flex-start; /* Alinea los iconos al inicio */
+    }
 }
 
 
@@ -1226,39 +1247,19 @@ footer>p>a {
         justify-content: space-around; /* Espaciado entre los elementos */
     }
 
-    .navbar-brand {
-        width: 100%; /* Ancho completo para la marca */
-        justify-content: center; /* Centra la marca */
-    }
-
-    .sect1 h1 {
-        font-size: 5rem; /* Reduce el tamaño del texto */
-    }
-
-    .sect1 h1 > span {
-        font-size: 6rem; /* Reduce el tamaño del texto del span */
-    }
-
-    .sect2 h1 {
-        font-size: 4rem; /* Reduce el tamaño del texto */
-        padding: 2rem 1rem; /* Ajusta el padding */
-    }
-
-    .sect3 h1 {
-        font-size: 4rem; /* Reduce el tamaño del texto */
-    }
-
-    .sect5 {
-        padding: 5em 2em; /* Ajusta el padding */
-    }
-
-    .tarjeta-sec2 {
-        width: 100%; /* Tarjetas ocupan el ancho completo */
-        margin: 10px 0; /* Espaciado vertical entre tarjetas */
+    #search-container {
+        width: 100%; /* Asegúrate de que el contenedor de búsqueda ocupe el ancho completo */
+        justify-content: flex-start; /* Alinea los elementos al inicio */
     }
 
     #search-bar {
-        width: 100%; /* El buscador ocupa el ancho completo */
-        padding: 10px; /* Aumenta el padding */
+        display: block; /* Haz visible el campo de búsqueda en pantallas pequeñas */
+        width: 100%; /* Asegúrate de que ocupe el ancho completo */
+        margin-top: 10px; /* Agrega un margen para separación */
+    }
+
+    .icons {
+        width: 100%; /* Asegúrate de que los iconos ocupen el ancho completo */
+        justify-content: flex-start; /* Alinea los iconos al inicio */
     }
 }
