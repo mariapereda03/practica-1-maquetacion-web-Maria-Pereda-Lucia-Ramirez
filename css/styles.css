@@ -753,6 +753,13 @@ header {
     text-align: center;
 }
 
+.sect3-p2 h1 span {
+    font-family: "Parisienne", cursive;
+    font-size: 8rem;
+    letter-spacing: 15px;
+    line-height: 5px;
+}
+
 /* CARRUSEL 3 */
 .row {
     display: flex;
