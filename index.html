@@ -69,58 +69,28 @@
   </section>
 
   <header>
-    <!-- MENÚ -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-3 mb-lg-0">
-            <li class="nav-item dropdown">
-              <div class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-bars"></i>
-              </div>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Sobre Nosotros</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#sect1">La Esencia del Cacao Elevada al Arte</a></li>
-                <li><a class="dropdown-item" href="#sect2">La Esencia de Nuestra Tradición</a></li>
-                <li><a class="dropdown-item" href="#sect3">Cacao de origen</a></li>
-                <li><a class="dropdown-item" href="#sect4">Opiniones</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="products.html #sect1-p2">Nuestras Mejores Exquisiteces</a></li>
-                <li><a class="dropdown-item" href="products.html #sect2-p2">Para Paladares con Buen Gusto</a></li>
-                <li><a class="dropdown-item" href="products.html #sect3-p2">Delicatesens Secretas</a></li>
-              </ul>
-            </li>
-            <div id="search-container">
-              <button id="search-icon" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
-              <input type="text" id="search-bar" placeholder="Buscar..." style="display: none;">
-            </div>
-          </ul>
+    <span class="barras" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div id="myNav" class="menu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <!-- LOGO -->
+      <a class="navbar-brand" href="#"><img class="logo-nav" src="media\imgs\logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-          <!-- LOGO -->
-          <a class="navbar-brand" href="#"><img class="logo-nav" src="media\imgs\logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- ICONS -->
-          <div class="icons">
-            <a class="navbar-brand" href="#target-content">
-              <i class="fa-solid fa-basket-shopping"></i>
-            </a>
-            <a class="navbar-brand" href="#target-content3">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          </div>
-        </div>
+      <!-- MENÚ -->
+      <div class="overlay-content">
+        <a href="#">Conocenos</a>
+        <a href="#sect1">La Esencia del Cacao Elevada al Arte</a>
+        <a href="#sect2">La Esencia de Nuestra Tradición</a>
+        <a href="#sect3">Cacao de origen</a>
+        <a href="#sect4">Opiniones</a>
+        <a href="products.html ">Productos</a>
       </div>
-    </nav>
+    </div>
+
     <!-- VIDEO -->
     <div class="ratio ratio-16x9">
       <video src="media\video\video-header.mp4" autoplay loop muted></video>
@@ -395,6 +365,16 @@
 
   <!-- EXTRAS -->
   <section id="extra">
+    <!-- ICONS -->
+    <div class="icons">
+      <a class="navbar-brand" href="#target-content3">
+        <i class="fa-solid fa-user" style="color: #331313;"></i>
+      </a>
+      <a class="navbar-brand" href="#target-content">
+        <i class="fa-solid fa-basket-shopping" style="color: #331313;"></i>
+      </a>
+    </div>
+    <!-- FLECHA -->
     <div class="flecha">
       <a href="#">
         <figure>
@@ -556,7 +536,6 @@
       </div>
     </div>
   </section>
-
 
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
