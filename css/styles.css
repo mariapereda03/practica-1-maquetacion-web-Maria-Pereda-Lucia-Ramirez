@@ -291,7 +291,7 @@ header {
     text-align: center;
 }
 
-/* Media Queries para Responsividad */
+/* Media Queries para Valores */
 @media (max-width: 1200px) {
     .sect3 {
         padding: 8em; /* Reduce el padding */
@@ -972,7 +972,7 @@ footer>p>a {
 }
 
 
-/* EXTRA - FLECHA */
+/* EXTRA */
 #extra {
     font-size: 30px;
     position: fixed;
@@ -980,44 +980,20 @@ footer>p>a {
     right: 1em;
     bottom: 0.5em;
     z-index: 3;
-}
-
-#extra .flecha {
-    width: 2em;
-    right: 1em;
-    bottom: 0.5em;
-
-}
-
-#extra .icons {
-    width: 1em;
-    right: 1em;
-    bottom: 0.5em;
-    
-}
-
-/* iconos compra y usuario */
-.icons i {
-    font-size: 30px;
-    color: #ede6d6;
-    margin: 1rem;
-}
-
-.icons {
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
 }
 
-.icons div:hover,
-.icons i:hover {
-    color: rgb(189, 113, 113);
-}
-
-.icons i {
+#extra i {
     font-size: 20px;
     margin: 1rem;
+    transition: color 0.3s;
+}
+
+#extra:hover i {
+    color: rgb(189, 113, 113);
 }
 
 
