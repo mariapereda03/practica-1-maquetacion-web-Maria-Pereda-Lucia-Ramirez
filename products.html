@@ -2,41 +2,47 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bergé</title>
-  <link rel="icon" href="media\imgs\favicon.png" type="image/x-icon">
-  <!-- LINK FONTAWESOME  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- BOOSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- CSS de Flickity -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
-
-  <!-- CSS PROPIO -->
-  <link rel="stylesheet" href="css\styles.css">
-
-  <!-- WW3 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- JQUERY -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-  <!-- JS de Flickity -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
-
-  <!-- JS PROPIO  -->
-  <script src="js/script.js"></script>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bergé</title>
+    <link rel="icon" href="media/imgs/favicon.png" type="image/x-icon">
+  
+    <!-- LINK FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> 
+  
+    <!-- CSS de Flickity -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
+  
+    <!-- CSS PROPIO -->
+    <link rel="stylesheet" href="css/styles.css">
+  
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <!-- JS de Flickity -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+  
+    <!-- JS de Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+  
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+  
+    <!-- JS PROPIO -->
+    <script src="js/script.js"></script>
+  </head>
 
 <body>
   <header>
@@ -169,11 +175,16 @@
             </div>
           </div>
         </div>
+        <!-- BOMBON -->
         <div class="bombon">
           <div class="row">
             <div class="col p-0 d-flex justify-content-center">
               <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
-                <img src="media\imgs\bombon-colores.jpg" class="card-img-top" alt="">
+                <div data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <img src="media\imgs\bombon-colores.jpg" class="card-img-top" alt="">
+                </div>
                 <div class="card-body">
                   <h3 class="card-title">SILVA</h5>
                     <p class="card-text">Bombones de frutas tropicales con mango Alfonso, fruta de la pasión y un toque cremoso de coco.</p>
@@ -182,7 +193,11 @@
             </div>
             <div class="col p-0 d-flex justify-content-center">
               <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
-                <img src="media\imgs\CHOCOLATE_SALPICADO.jpg" class="card-img-top" alt="">
+                <div data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <img src="media\imgs\CHOCOLATE_SALPICADO.jpg" class="card-img-top" alt="">
+                </div>
                 <div class="card-body">
                   <h3 class="card-title">GRATIA</h5>
                     <p class="card-text">Tableta de chocolate negro de Madagascar con yuzu japonés.</p>
@@ -191,7 +206,11 @@
             </div>
             <div class="col p-0 d-flex justify-content-center">
               <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
-                <img src="media\imgs\BOMBOM_IGLU.jpg" class="card-img-top" alt="">
+                <div data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <img src="media\imgs\BOMBOM_IGLU.jpg" class="card-img-top" alt="">
+                </div>
                 <div class="card-body">
                   <h3 class="card-title">SOMNIUM</h5>
                     <p class="card-text">Bombón de chocolate puro de cacao criollo venezolano, intenso y elegante.</p>
@@ -200,7 +219,11 @@
             </div>
             <div class="col p-0 d-flex justify-content-center">
               <div class="card mx-2 tarjeta-sec1" style="width: 18rem;">
-                <img src="media\imgs\bombon-macadamia.jpg" class="card-img-top" alt="">
+                <div data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <img src="media\imgs\bombon-macadamia.jpg" class="card-img-top" alt="">
+                </div>
                 <div class="card-body">
                   <h3 class="card-title">AURUM</h5>
                     <p class="card-text">Cacao Arriba, nuez de macadamia y maracuyá fresca.</p>
@@ -220,14 +243,18 @@
             <h1><span>P</span>ARA <span>P</span>ALADARES CON <span>B</span>UEN <span>G</span>USTO</h1>
           </div>
           <div class="col-xl-6 pb-5">
-            <img src="media\imgs\trufas-chocolate.jpg" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\trufas-chocolate.jpg" class="hover-efecto" alt="">
+            </div>
           </div>
           <div class="col-xl-6 pb-5 d-flex ps-4 flex-column justify-content-end align-items-start texto3">
             <h3>TEMPUS</h3>
             <p>Descubre el placer de nuestras trufas de chocolate artesanales, elaboradas con ingredientes de la más alta calidad. Cada bocado combina el exquisito sabor del chocolate belga 70% cacao con crema fresca de origen local y un toque de mantequilla francesa de denominación AOP, creando una textura rica y suave. Nuestras trufas están ligeramente endulzadas con azúcar de caña orgánica y cubiertas con un delicado polvo de cacao ecuatoriano, famoso por su sabor profundo y matices florales.</p>
           </div>
           <div class="col-xl-3">
-            <img src="media\imgs\POSTRE.jpg" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\POSTRE.jpg" class="hover-efecto" alt="">
+            </div>
           </div>
           <div class="col-xl-3 d-flex justify-content-center align-items-center flex-column">
             <h3>REGNUM</h3>
@@ -236,10 +263,14 @@
             </p>
           </div>
           <div class="col-xl-3">
-            <img src="media\imgs\pastas-tres-colores.jpg" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\pastas-tres-colores.jpg" class="hover-efecto" alt="">
+            </div>
           </div>
           <div class="col-xl-3">
-            <img src="media\imgs\POSTRE_PLATO.jpg" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\POSTRE_PLATO.jpg" class="hover-efecto" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -249,7 +280,14 @@
             <h3>AUREA</h3>
           </div>
           <div class="col-xl-6 p-1 py-4">
-            <img class="" src="media\imgs\BOMBONES.jpeg" id="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img class="" src="media\imgs\BOMBONES.jpeg" id="hover-efecto" alt="">
+                <div class="overlay">
+                    <span>
+                        <p>Texto que aparece al pasar el ratón sobre la imagen de POSTRE.</p>
+                    </span>
+                </div>
+            </div>
           </div>
           <div class="col d-flex justify-content-center align-items-center">
             <h3>TEMPUS</h3>
@@ -265,22 +303,34 @@
             </p>
           </div>
           <div class="col-xl-3 mb-4">
-            <img src="media\imgs\CONCHAS_CHOCOLATE.jpg" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\CONCHAS_CHOCOLATE.jpg" class="hover-efecto" alt="">
+            </div>
           </div>
           <div class="col-xl-3">
-            <img src="media\imgs\TABLETA.jpg" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\TABLETA.jpg" class="hover-efecto" alt="">
+            </div>
           </div>
           <div class="col-xl-3">
-            <img src="media\imgs\prod-2.jfif" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\prod-2.jfif" class="hover-efecto" alt="">
+            </div>
           </div>
           <div class="col-xl-3">
-            <img src="media\imgs\prod-1.jfif" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\prod-1.jfif" class="hover-efecto" alt="">
+            </div>
           </div>
           <div class="col-xl-3">
-            <img src="media\imgs\PALITOS DE CHOCOLATE.jpg" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\PALITOS DE CHOCOLATE.jpg" class="hover-efecto" alt="">
+            </div>
           </div>
           <div class="col-xl-3">
-            <img src="media\imgs\BOMBONES_DISPERSOS.jpg" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\BOMBONES_DISPERSOS.jpg" class="hover-efecto" alt="">
+            </div>
           </div>
           <div class="col-xl-3 d-flex justify-content-center align-items-center flex-column">
             <h3>PAX</h3>
@@ -293,7 +343,9 @@
       <div class="container-fluid text-center">
         <div class="row">
           <div class="col-xl-9 py-4">
-            <img src="media\imgs\crema-chocolate.jpeg" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\crema-chocolate.jpeg" class="hover-efecto" alt="">
+            </div>
           </div>
           <div class="col-xl-3 d-flex justify-content-end align-items-start flex-column texto-4">
             <h3>CACAO CRIOLLO</h3>
@@ -306,38 +358,58 @@
       <div class="container-fluid text-center">
         <div class="row">
           <div class="col-xl-3 d-flex justify-content-end align-items-end">
-            <video src="media\video\hilos-choco.mp4" id="hover-efecto" loop muted autoplay class="w-100" ></video>
+            <div data-aos="zoom-in">
+                <video src="media\video\hilos-choco.mp4" id="hover-efecto" loop muted autoplay class="w-100" ></video>
+            </div>
           </div>
           <div class="col-xl-3 d-flex justify-content-end align-items-end">
-            <img src="media\imgs\MADALENAS_CHOCO.jpg" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\MADALENAS_CHOCO.jpg" class="hover-efecto" alt="">
+            </div>
           </div>
           <div class="col-xl-6">
-            <video src="media\video\receta-1.mp4" loop muted autoplay class="w-100" id="hover-efecto" ></video>
+            <div data-aos="zoom-in">
+                <video src="media\video\receta-1.mp4" loop muted autoplay class="w-100" id="hover-efecto" ></video>
+            </div>
           </div>
           <div class="col-xl-6 mt-4">
-            <img src="media\imgs\POLVO_CHOCO.jpg" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\POLVO_CHOCO.jpg" class="hover-efecto" alt="">
+            </div>
           </div>
           <div class="col-xl-3 d-flex justify-content-end align-items-end">
-            <img src="media\imgs\COCINANDO.jpg" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\COCINANDO.jpg" class="hover-efecto" alt="">
+            </div>
           </div>
           <div class="col-xl-3 d-flex justify-content-end align-items-end">
-            <img src="media\imgs\ESCULTURA_CHOCOLATE.jpg" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\ESCULTURA_CHOCOLATE.jpg" class="hover-efecto" alt="">
+            </div>
           </div>
         </div>
       </div>
       <div class="container-fluid text-center">
         <div class="row py-4">
           <div class="col-xl-3">
-            <video src="media\video\chocolate-visual.mp4" loop muted autoplay class="w-100" id="hover-efecto" ></video>
+            <div data-aos="zoom-in">
+                <video src="media\video\chocolate-visual.mp4" loop muted autoplay class="w-100" id="hover-efecto" ></video>
+            </div>
           </div>
           <div class="col-xl-3">
-            <img src="media\imgs\DESAYUNO.jpg" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\DESAYUNO.jpg" class="hover-efecto" alt="">
+            </div>
           </div>
           <div class="col-xl-3">
-            <video src="media\video\bombones.mp4" loop muted autoplay class="w-100" id="hover-efecto" ></video>
+            <div data-aos="zoom-in">
+                <video src="media\video\bombones.mp4" loop muted autoplay class="w-100" id="hover-efecto" ></video>
+            </div>
           </div>
           <div class="col-xl-3">
-            <img src="media\imgs\torre.jpg" class="hover-efecto" alt="">
+            <div data-aos="zoom-in">
+                <img src="media\imgs\torre.jpg" class="hover-efecto" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -636,14 +708,11 @@
   </section>
 
 
-  <!-- ENLACES -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
