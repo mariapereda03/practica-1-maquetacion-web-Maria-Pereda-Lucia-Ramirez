@@ -90,6 +90,29 @@ header {
     margin: 1em;
 }
 
+/* ICONS */
+.navbar-nav {
+    display: flex;
+    width: 30%;
+    justify-content: flex-start;
+}
+
+.navbar-nav i {
+    font-size: 20px;
+    color: #ede6d6;
+    margin: 1rem;
+}
+
+.navbar-nav div:hover,
+.navbar-nav i:hover {
+    color: rgb(189, 113, 113);
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
 /* Buscador */
 #search-container {
     display: flex;
@@ -172,6 +195,28 @@ header {
     border-radius: 0;
 }
 
+/* Linea de progreso */
+.flickity-page-dots {
+    display: none;
+}
+
+.progress-line {
+    height: 5px;
+    background-color: #EDE6D6;
+    margin-top: 10px;
+    width: 50%;
+    position: relative;
+    border-radius: 3px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #7a6f58;
+    width: 0;
+    transition: width 0.5s;
+    border-radius: 3px;
+}
+
 /* SECCIÓN 2 La esencia de nuestra tradición */
 .sect2 {
     background-color: #EDE6D6;
@@ -249,62 +294,63 @@ header {
 /* Media Queries para Valores */
 @media (max-width: 1200px) {
     .sect3 {
-        padding: 8em;
+        padding: 8em; /* Reduce el padding */
     }
 
     .sect3 h1 {
-        font-size: 5em;
+        font-size: 5em; /* Reduce el tamaño del texto */
     }
 
     .sect3 span {
-        font-size: 6rem;
-        letter-spacing: 10px;
+        font-size: 6rem; /* Reduce el tamaño del texto del span */
+        letter-spacing: 10px; /* Reduce el espaciado de letras */
     }
 
     .container-text-center {
-        padding: 4em;
-        margin: 10px;
+        padding: 4em; /* Reduce el padding */
+        margin: 10px; /* Reduce el margen */
     }
 }
 
 @media (max-width: 768px) {
     .sect3 {
-        padding: 5em;
+        padding: 5em; /* Reduce el padding aún más */
     }
 
     .sect3 h1 {
-        font-size: 4em;
+        font-size: 4em; /* Reduce el tamaño del texto */
     }
 
     .sect3 span {
-        font-size: 5rem;
-        letter-spacing: 8px;
+        font-size: 5rem; /* Reduce el tamaño del texto del span */
+        letter-spacing: 8px; /* Reduce el espaciado de letras */
     }
 
     .container-text-center {
-        padding: 3em;
-        margin: 5px;
-        border-radius: 3em;
+        padding: 3em; /* Reduce el padding */
+        margin: 5px; /* Reduce el margen */
+        border-radius: 3em; /* Reduce el radio del borde */
     }
 }
 
 @media (max-width: 480px) {
     .sect3 {
-        padding: 3em;
+        padding: 3em; /* Reduce el padding para pantallas muy pequeñas */
     }
 
     .sect3 h1 {
-        font-size: 3em;
+        font-size: 3em; /* Reduce el tamaño del texto */
     }
 
     .sect3 span {
-        font-size: 4rem;
-        letter-spacing: 5px;
+        font-size: 4rem; /* Reduce el tamaño del texto del span */
+        letter-spacing: 5px; /* Reduce el espaciado de letras */
+    }
 
     .container-text-center {
-        padding: 2em;
-        margin: 5px;
-        border-radius: 2em;
+        padding: 2em; /* Reduce el padding */
+        margin: 5px; /* Mantiene el margen reducido */
+        border-radius: 2em; /* Reduce el radio del borde */
     }
 }
 }
@@ -410,71 +456,71 @@ header {
 /* Media Queries para Opinión */
 @media (max-width: 1200px) {
     .heading h1 {
-        font-size: 6rem;
+        font-size: 6rem; /* Reduce el tamaño del texto */
     }
 
     .heading span {
-        font-size: 7rem;
-        letter-spacing: 10px;
+        font-size: 7rem; /* Reduce el tamaño del texto del span */
+        letter-spacing: 10px; /* Reduce el espaciado de letras */
     }
 
     .side {
-        width: 25%;
+        width: 25%; /* Aumenta el ancho para pantallas más pequeñas */
     }
 
     .middle {
-        width: 50%;
+        width: 50%; /* Reduce el ancho */
     }
 
     .container-text-center-4 {
-        padding: 4em;
-        margin: 15px;
+        padding: 4em; /* Reduce el padding */
+        margin: 15px; /* Reduce el margen */
     }
 }
 
 @media (max-width: 768px) {
     .heading h1 {
-        font-size: 5rem;
+        font-size: 5rem; /* Reduce el tamaño del texto */
     }
 
     .heading span {
-        font-size: 6rem;
-        letter-spacing: 8px;
+        font-size: 6rem; /* Reduce el tamaño del texto del span */
+        letter-spacing: 8px; /* Reduce el espaciado de letras */
     }
 
     .side {
-        width: 100%;
-        margin-top: 5px;
+        width: 100%; /* Cambia a ancho completo */
+        margin-top: 5px; /* Reduce el margen superior */
     }
 
     .middle {
-        width: 100%;
-        margin-top: 5px;
+        width: 100%; /* Cambia a ancho completo */
+        margin-top: 5px; /* Reduce el margen superior */
     }
 
     .container-text-center-4 {
-        padding: 3em;
-        margin: 10px;
+        padding: 3em; /* Reduce el padding */
+        margin: 10px; /* Reduce el margen */
     }
 }
 
 @media (max-width: 480px) {
     .heading h1 {
-        font-size: 4rem;
+        font-size: 4rem; /* Reduce el tamaño del texto */
     }
 
     .heading span {
-        font-size: 5rem;
-        letter-spacing: 5px;
+        font-size: 5rem; /* Reduce el tamaño del texto del span */
+        letter-spacing: 5px; /* Reduce el espaciado de letras */
     }
 
     .bar-container {
-        padding: 1em;
+        padding: 1em; /* Ajusta el padding */
     }
 
     .container-text-center-4 {
-        padding: 2em;
-        margin: 5px;
+        padding: 2em; /* Reduce el padding */
+        margin: 5px; /* Mantiene el margen reducido */
     }
 }
 
@@ -568,6 +614,27 @@ header {
     height: 20em;
     width: 100%;
     object-fit: cover;
+}
+
+.progress-line2 {
+    height: 5px;
+    background-color: #EDE6D6;
+    margin-top: 10px;
+    width: 50%;
+    position: relative;
+    border-radius: 3px;
+}
+
+.progress-fill2 {
+    height: 100%;
+    /* Fill the height of the progress line */
+    background-color: #7a6f58;
+    /* Color of the progress fill */
+    width: 0;
+    /* Start with 0 width */
+    transition: width 0.5s;
+    /* Smooth transition */
+    border-radius: 3px;
 }
 
 .bombon {
@@ -1179,28 +1246,28 @@ footer>p>a {
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; /* Cambia la dirección del menú */
+        align-items: flex-start; /* Alinea los elementos al inicio */
     }
 
     .navbar-nav {
-        width: 100%;
-        justify-content: space-around;
+        width: 100%; /* Ocupa el ancho completo */
+        justify-content: space-around; /* Espaciado entre los elementos */
     }
 
     #search-container {
-        width: 100%;
-        justify-content: flex-start;
+        width: 100%; /* Asegúrate de que el contenedor de búsqueda ocupe el ancho completo */
+        justify-content: flex-start; /* Alinea los elementos al inicio */
     }
 
     #search-bar {
-        display: block;
-        width: 100%;
-        margin-top: 10px;
+        display: block; /* Haz visible el campo de búsqueda en pantallas pequeñas */
+        width: 100%; /* Asegúrate de que ocupe el ancho completo */
+        margin-top: 10px; /* Agrega un margen para separación */
     }
 
     .icons {
-        width: 100%;
-        justify-content: flex-start;
+        width: 100%; /* Asegúrate de que los iconos ocupen el ancho completo */
+        justify-content: flex-start; /* Alinea los iconos al inicio */
     }
-};
+}

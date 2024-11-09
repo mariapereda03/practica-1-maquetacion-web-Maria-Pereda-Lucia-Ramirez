@@ -36,12 +36,19 @@ function closeNav() {
         }
     });
     
-    // CARRUSEL
+    // CARRUSEL SECCION 1
     $('.main-carousel').flickity({
         cellAlign: 'left',
         contain: true,
         freeScroll: true,
         prevNextButtons: false,
+    });
+
+    // BARRA DE PROGRESO DEL CARRUSEL
+    $('.main-carousel').on('select.flickity', function(event, index) {
+        var totalCells = $('.main-carousel .carousel-cell').length; // Total number of cells
+        var progressWidth = ((index + 1) / totalCells) * 100; // Calculate progress width as a percentage
+        $('.progress-fill').css('width', progressWidth + '%'); // Update the width of the progress fill
     });
 
     // Trigger the select event on initialization to set the initial progress line width
