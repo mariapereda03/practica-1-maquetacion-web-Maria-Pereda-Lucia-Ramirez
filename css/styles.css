@@ -407,7 +407,7 @@ header {
     text-align: center;
 }
 
-/* Media Queries para Responsividad */
+/* Media Queries para Opinión */
 @media (max-width: 1200px) {
     .heading h1 {
         font-size: 6rem;
@@ -520,7 +520,6 @@ header {
 
 
 /* PAGINA PRODUCTOS */
-
 /* Sección 1: Nuestras mejores exquisiteces */
 .sect1-p2 h1 {
     font-family: 'Oswald', serif;
@@ -545,9 +544,7 @@ header {
     font-size: 1.5rem;
     color: #EDE6D6;
     width: calc(50% - 20px);
-    /* Ajusta el ancho para mostrar 2 tarjetas */
     margin: 10px;
-    /* Espaciado entre tarjetas */
     transition: transform 0.3s ease;
 }
 
@@ -651,7 +648,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #26161682;
+    background-color: #261616;
     color: #EDE6D6;
     text-align: center;
     padding-top: 40%;
