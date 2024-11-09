@@ -1,15 +1,15 @@
 console.log("online!");
 
-//MENÚ
+$(document).ready(function() {
+
+    //MENÚ
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.width = "100%";
 }
 
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.width = "0%";
 }
-
-$(document).ready(function() {
     // COOKIES
     if (!localStorage.getItem('cookiesAccepted')) {
         var toastElement = document.getElementById('cookieToast');
@@ -46,14 +46,11 @@ $(document).ready(function() {
 
     // Trigger the select event on initialization to set the initial progress line width
     var initialIndex = $('.main-carousel').data('flickity').selectedIndex;
+    var totalCells = $('.main-carousel .carousel-cell').length; // Asegúrate de definir totalCells aquí
     var initialProgressWidth = ((initialIndex + 1) / totalCells) * 100;
     $('.progress-fill').css('width', initialProgressWidth + '%');
-});
 
-//INSCRIPCIÓN
-document.addEventListener('DOMContentLoaded', function() {
-    'use strict';
-
+    //INSCRIPCIÓN
     const formulario = document.getElementById('miFormulario');
     const mensajeExito = document.getElementById('mensajeExito');
     const botonEnviar = formulario.querySelector('button');
