@@ -1,15 +1,9 @@
 console.log("online!");
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     //MENÚ
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-}
 
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
     // COOKIES
     if (!localStorage.getItem('cookiesAccepted')) {
         var toastElement = document.getElementById('cookieToast');
@@ -17,7 +11,7 @@ function closeNav() {
         toast.show();
     }
 
-    $('#acceptCookies').click(function() {
+    $('#acceptCookies').click(function () {
         $(this).removeClass('btn-primary').addClass('btn-red');
         localStorage.setItem('cookiesAccepted', 'true');
         var toastElement = document.getElementById('cookieToast');
@@ -26,36 +20,43 @@ function closeNav() {
     });
 
     //BUSCADOR
-    document.getElementById("search-icon").addEventListener("click", function() {
-        var searchBar = document.getElementById("search-bar");
-        if (searchBar.style.display === "none" || searchBar.style.display === "") {
-            searchBar.style.display = "block"; // Muestra la barra de búsqueda
-            searchBar.focus(); // Opcional: enfocar la barra de búsqueda
-        } else {
-            searchBar.style.display = "none"; // Oculta la barra de búsqueda
-        }
-    });
-    
-    // CARRUSEL SECCION 1
-    $('.main-carousel').flickity({
-        cellAlign: 'left',
-        contain: true,
-        freeScroll: true,
-        prevNextButtons: false,
+    // document.getElementById("search-icon").addEventListener("click", function() {
+    //     var searchBar = document.getElementById("search-bar");
+    //     if (searchBar.style.display === "none" || searchBar.style.display === "") {
+    //         searchBar.style.display = "block"; // Muestra la barra de búsqueda
+    //         searchBar.focus(); // Opcional: enfocar la barra de búsqueda
+    //     } else {
+    //         searchBar.style.display = "none"; // Oculta la barra de búsqueda
+    //     }
+    // });
+
+    // CARRUSEL SECCION
+    $(document).ready(function () {
+        // Inicializar Flickity
+        $('.main-carousel').flickity({
+            cellAlign: 'left',
+            contain: true,
+            wrapAround: true,
+            freeScroll: true,
+            prevNextButtons: false,
+            pageDots: false,
+            
+        });
     });
 
-    // BARRA DE PROGRESO DEL CARRUSEL
-    $('.main-carousel').on('select.flickity', function(event, index) {
-        var totalCells = $('.main-carousel .carousel-cell').length; // Total number of cells
-        var progressWidth = ((index + 1) / totalCells) * 100; // Calculate progress width as a percentage
-        $('.progress-fill').css('width', progressWidth + '%'); // Update the width of the progress fill
-    });
 
-    // Trigger the select event on initialization to set the initial progress line width
-    var initialIndex = $('.main-carousel').data('flickity').selectedIndex;
-    var totalCells = $('.main-carousel .carousel-cell').length; // Asegúrate de definir totalCells aquí
-    var initialProgressWidth = ((initialIndex + 1) / totalCells) * 100;
-    $('.progress-fill').css('width', initialProgressWidth + '%');
+    // // BARRA DE PROGRESO DEL CARRUSEL
+    // $('.main-carousel').on('select.flickity', function(event, index) {
+    //     var totalCells = $('.main-carousel .carousel-cell').length; // Total number of cells
+    //     var progressWidth = ((index + 1) / totalCells) * 100; // Calculate progress width as a percentage
+    //     $('.progress-fill').css('width', progressWidth + '%'); // Update the width of the progress fill
+    // });
+
+    // // Trigger the select event on initialization to set the initial progress line width
+    // var initialIndex = $('.main-carousel').data('flickity').selectedIndex;
+    // var totalCells = $('.main-carousel .carousel-cell').length; // Asegúrate de definir totalCells aquí
+    // var initialProgressWidth = ((initialIndex + 1) / totalCells) * 100;
+    // $('.progress-fill').css('width', initialProgressWidth + '%');
 
     //INSCRIPCIÓN
     const formulario = document.getElementById('miFormulario');
@@ -79,7 +80,7 @@ function closeNav() {
     // Código para el botón de continuar (si es necesario)
     const continueBtn = document.querySelector(".button");
     if (continueBtn) {
-        continueBtn.addEventListener('click', function() {
+        continueBtn.addEventListener('click', function () {
             alert("click");
         });
     } else {

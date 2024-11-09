@@ -4,11 +4,6 @@
     box-sizing: border-box
 }
 
-/* :root {
-    --clr-primary: #261616;
-    --clr-primary: #EDE6D6;
-} */
-
 body {
     margin: 0;
     background-color: #261616;
@@ -26,68 +21,33 @@ header {
 
 
 /* MENÚ */
-.barras {
-    position: fixed;
-    top: 1em;
-    left: 1em;
-    color: white;
-    z-index: 2000;
+
+.navbar {
+    background-color: #261616 !important;
+    font-family: "Oswald", sans-serfi;
+    font-size: 0.8rem;
 }
 
-.menu {
-    height: 100%;
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
+.navbar-nav {
+    flex-grow: 1;
 }
 
-.menu-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    z-index: 2001;
-}
-
-.menu a {
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-    display: flex;
-    justify-content: center;
-}
-
-.menu a:hover, .menu a:focus {
-    color: #f1f1f1;
-}
-
-.menu .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-    z-index: 2002;
-}
-
-@media screen and (max-height: 450px) {
-    .menu a {font-size: 20px}
-    .menu .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
+.nav-link {
+    color: #ede6d6;
 }
 
 .logo-nav {
-    width: 20%;
-    margin: 1em;
+    height: 4rem;
+}
+
+.iconos-link {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-toggler {
+    color: #EDE6D6;
 }
 
 /* ICONS */
@@ -294,66 +254,86 @@ header {
 /* Media Queries para Valores */
 @media (max-width: 1200px) {
     .sect3 {
-        padding: 8em; /* Reduce el padding */
+        padding: 8em;
+        /* Reduce el padding */
     }
 
     .sect3 h1 {
-        font-size: 5em; /* Reduce el tamaño del texto */
+        font-size: 5em;
+        /* Reduce el tamaño del texto */
     }
 
     .sect3 span {
-        font-size: 6rem; /* Reduce el tamaño del texto del span */
-        letter-spacing: 10px; /* Reduce el espaciado de letras */
+        font-size: 6rem;
+        /* Reduce el tamaño del texto del span */
+        letter-spacing: 10px;
+        /* Reduce el espaciado de letras */
     }
 
     .container-text-center {
-        padding: 4em; /* Reduce el padding */
-        margin: 10px; /* Reduce el margen */
+        padding: 4em;
+        /* Reduce el padding */
+        margin: 10px;
+        /* Reduce el margen */
     }
 }
 
 @media (max-width: 768px) {
     .sect3 {
-        padding: 5em; /* Reduce el padding aún más */
+        padding: 5em;
+        /* Reduce el padding aún más */
     }
 
     .sect3 h1 {
-        font-size: 4em; /* Reduce el tamaño del texto */
+        font-size: 4em;
+        /* Reduce el tamaño del texto */
     }
 
     .sect3 span {
-        font-size: 5rem; /* Reduce el tamaño del texto del span */
-        letter-spacing: 8px; /* Reduce el espaciado de letras */
+        font-size: 5rem;
+        /* Reduce el tamaño del texto del span */
+        letter-spacing: 8px;
+        /* Reduce el espaciado de letras */
     }
 
     .container-text-center {
-        padding: 3em; /* Reduce el padding */
-        margin: 5px; /* Reduce el margen */
-        border-radius: 3em; /* Reduce el radio del borde */
+        padding: 3em;
+        /* Reduce el padding */
+        margin: 5px;
+        /* Reduce el margen */
+        border-radius: 3em;
+        /* Reduce el radio del borde */
     }
 }
 
 @media (max-width: 480px) {
     .sect3 {
-        padding: 3em; /* Reduce el padding para pantallas muy pequeñas */
+        padding: 3em;
+        /* Reduce el padding para pantallas muy pequeñas */
     }
 
     .sect3 h1 {
-        font-size: 3em; /* Reduce el tamaño del texto */
+        font-size: 3em;
+        /* Reduce el tamaño del texto */
     }
 
     .sect3 span {
-        font-size: 4rem; /* Reduce el tamaño del texto del span */
-        letter-spacing: 5px; /* Reduce el espaciado de letras */
+        font-size: 4rem;
+        /* Reduce el tamaño del texto del span */
+        letter-spacing: 5px;
+        /* Reduce el espaciado de letras */
     }
 
     .container-text-center {
-        padding: 2em; /* Reduce el padding */
-        margin: 5px; /* Mantiene el margen reducido */
-        border-radius: 2em; /* Reduce el radio del borde */
+        padding: 2em;
+        /* Reduce el padding */
+        margin: 5px;
+        /* Mantiene el margen reducido */
+        border-radius: 2em;
+        /* Reduce el radio del borde */
     }
 }
-}
+
 
 
 /* SECCIÓN 4: Opinión de nuestros clientes */
@@ -456,71 +436,93 @@ header {
 /* Media Queries para Opinión */
 @media (max-width: 1200px) {
     .heading h1 {
-        font-size: 6rem; /* Reduce el tamaño del texto */
+        font-size: 6rem;
+        /* Reduce el tamaño del texto */
     }
 
     .heading span {
-        font-size: 7rem; /* Reduce el tamaño del texto del span */
-        letter-spacing: 10px; /* Reduce el espaciado de letras */
+        font-size: 7rem;
+        /* Reduce el tamaño del texto del span */
+        letter-spacing: 10px;
+        /* Reduce el espaciado de letras */
     }
 
     .side {
-        width: 25%; /* Aumenta el ancho para pantallas más pequeñas */
+        width: 25%;
+        /* Aumenta el ancho para pantallas más pequeñas */
     }
 
     .middle {
-        width: 50%; /* Reduce el ancho */
+        width: 50%;
+        /* Reduce el ancho */
     }
 
     .container-text-center-4 {
-        padding: 4em; /* Reduce el padding */
-        margin: 15px; /* Reduce el margen */
+        padding: 4em;
+        /* Reduce el padding */
+        margin: 15px;
+        /* Reduce el margen */
     }
 }
 
 @media (max-width: 768px) {
     .heading h1 {
-        font-size: 5rem; /* Reduce el tamaño del texto */
+        font-size: 5rem;
+        /* Reduce el tamaño del texto */
     }
 
     .heading span {
-        font-size: 6rem; /* Reduce el tamaño del texto del span */
-        letter-spacing: 8px; /* Reduce el espaciado de letras */
+        font-size: 6rem;
+        /* Reduce el tamaño del texto del span */
+        letter-spacing: 8px;
+        /* Reduce el espaciado de letras */
     }
 
     .side {
-        width: 100%; /* Cambia a ancho completo */
-        margin-top: 5px; /* Reduce el margen superior */
+        width: 100%;
+        /* Cambia a ancho completo */
+        margin-top: 5px;
+        /* Reduce el margen superior */
     }
 
     .middle {
-        width: 100%; /* Cambia a ancho completo */
-        margin-top: 5px; /* Reduce el margen superior */
+        width: 100%;
+        /* Cambia a ancho completo */
+        margin-top: 5px;
+        /* Reduce el margen superior */
     }
 
     .container-text-center-4 {
-        padding: 3em; /* Reduce el padding */
-        margin: 10px; /* Reduce el margen */
+        padding: 3em;
+        /* Reduce el padding */
+        margin: 10px;
+        /* Reduce el margen */
     }
 }
 
 @media (max-width: 480px) {
     .heading h1 {
-        font-size: 4rem; /* Reduce el tamaño del texto */
+        font-size: 4rem;
+        /* Reduce el tamaño del texto */
     }
 
     .heading span {
-        font-size: 5rem; /* Reduce el tamaño del texto del span */
-        letter-spacing: 5px; /* Reduce el espaciado de letras */
+        font-size: 5rem;
+        /* Reduce el tamaño del texto del span */
+        letter-spacing: 5px;
+        /* Reduce el espaciado de letras */
     }
 
     .bar-container {
-        padding: 1em; /* Ajusta el padding */
+        padding: 1em;
+        /* Ajusta el padding */
     }
 
     .container-text-center-4 {
-        padding: 2em; /* Reduce el padding */
-        margin: 5px; /* Mantiene el margen reducido */
+        padding: 2em;
+        /* Reduce el padding */
+        margin: 5px;
+        /* Mantiene el margen reducido */
     }
 }
 
@@ -571,7 +573,6 @@ header {
     font-family: 'Oswald', serif;
     font-size: 7rem;
     padding: 2rem;
-    margin-bottom: 3rem;
     text-align: center;
 }
 
@@ -697,9 +698,9 @@ header {
 
 #hover-video:hover {
     transform: scale(1.03);
-}s
+}
 
-.hover-efecto img {
+s .hover-efecto img {
     display: block;
     width: 100%;
     height: auto;
@@ -803,6 +804,10 @@ footer {
     justify-content: center;
 }
 
+footer p {
+    font-size: 0.6rem;
+}
+
 footer>p:not(:first-child) {
     padding-left: 1em;
 }
@@ -834,7 +839,7 @@ footer>p>a {
     background-color: #EDE6D6;
     margin-top: 10px;
     width: 50%;
-    position:fixed;
+    position: fixed;
     border-radius: 3px;
 }
 
@@ -1244,30 +1249,4 @@ footer>p>a {
 }
 
 
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Cambia la dirección del menú */
-        align-items: flex-start; /* Alinea los elementos al inicio */
-    }
-
-    .navbar-nav {
-        width: 100%; /* Ocupa el ancho completo */
-        justify-content: space-around; /* Espaciado entre los elementos */
-    }
-
-    #search-container {
-        width: 100%; /* Asegúrate de que el contenedor de búsqueda ocupe el ancho completo */
-        justify-content: flex-start; /* Alinea los elementos al inicio */
-    }
-
-    #search-bar {
-        display: block; /* Haz visible el campo de búsqueda en pantallas pequeñas */
-        width: 100%; /* Asegúrate de que ocupe el ancho completo */
-        margin-top: 10px; /* Agrega un margen para separación */
-    }
-
-    .icons {
-        width: 100%; /* Asegúrate de que los iconos ocupen el ancho completo */
-        justify-content: flex-start; /* Alinea los iconos al inicio */
-    }
-}
+/* s */
