@@ -705,7 +705,9 @@ footer>p>a {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2em;
     background-color: #261616;
     color: #DFDBE5;
