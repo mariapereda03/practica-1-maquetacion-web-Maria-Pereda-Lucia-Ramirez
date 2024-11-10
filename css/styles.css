@@ -34,6 +34,12 @@ header {
 
 .nav-link {
     color: #ede6d6;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: rgb(189, 113, 113);
+    transform: scale(1.04);
 }
 
 .logo-nav {
@@ -41,14 +47,28 @@ header {
 }
 
 .iconos-link {
+    font-size: 1.3rem;
     display: flex;
     align-items: center;
     margin-left: auto;
+
+
+}
+
+.iconos-link .navbar-link {
+    color: #EDE6D6 !important;
+    transition: 0.3s ease;
+}
+
+.iconos-link .navbar-link:hover {
+    color: rgb(189, 113, 113);
 }
 
 .navbar-toggler {
-    color: #EDE6D6;
+    background-color: #EDE6D6 !important;
+    border: none;
 }
+
 
 /* ICONS */
 .navbar-nav {
@@ -63,35 +83,16 @@ header {
     margin: 1rem;
 }
 
-.navbar-nav div:hover,
-.navbar-nav i:hover {
+.iconos-link .navbar-link:hover,
+.iconos-link i:hover {
     color: rgb(189, 113, 113);
 }
+
+
 
 .nav-item {
     display: flex;
     align-items: center;
-}
-
-/* Buscador */
-#search-container {
-    display: flex;
-    align-items: center;
-    z-index: 20;
-}
-
-#search-icon {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-}
-
-#search-bar {
-    width: 200px;
-    padding: 5px;
-    margin-left: 10px;
-    display: none;
 }
 
 /* SECCION 1: La esencia del cacao elevada al arte */
@@ -231,13 +232,13 @@ header {
 }
 
 .sect3 h1 {
-    font-size: 6em;
+    font-size: 5em;
     font-family: 'Oswald', serif;
 }
 
 .sect3 span {
     font-family: "Parisienne", cursive;
-    font-size: 7rem;
+    font-size: 6rem;
     letter-spacing: 12px;
     line-height: 8px;
 }
@@ -247,92 +248,10 @@ header {
     padding: 5em;
     border-radius: 5em;
     display: inline-block;
-    margin: 20px;
+    width: 100%;
     text-align: center;
 }
 
-/* Media Queries para Valores */
-@media (max-width: 1200px) {
-    .sect3 {
-        padding: 8em;
-        /* Reduce el padding */
-    }
-
-    .sect3 h1 {
-        font-size: 5em;
-        /* Reduce el tamaño del texto */
-    }
-
-    .sect3 span {
-        font-size: 6rem;
-        /* Reduce el tamaño del texto del span */
-        letter-spacing: 10px;
-        /* Reduce el espaciado de letras */
-    }
-
-    .container-text-center {
-        padding: 4em;
-        /* Reduce el padding */
-        margin: 10px;
-        /* Reduce el margen */
-    }
-}
-
-@media (max-width: 768px) {
-    .sect3 {
-        padding: 5em;
-        /* Reduce el padding aún más */
-    }
-
-    .sect3 h1 {
-        font-size: 4em;
-        /* Reduce el tamaño del texto */
-    }
-
-    .sect3 span {
-        font-size: 5rem;
-        /* Reduce el tamaño del texto del span */
-        letter-spacing: 8px;
-        /* Reduce el espaciado de letras */
-    }
-
-    .container-text-center {
-        padding: 3em;
-        /* Reduce el padding */
-        margin: 5px;
-        /* Reduce el margen */
-        border-radius: 3em;
-        /* Reduce el radio del borde */
-    }
-}
-
-@media (max-width: 480px) {
-    .sect3 {
-        padding: 3em;
-        /* Reduce el padding para pantallas muy pequeñas */
-    }
-
-    .sect3 h1 {
-        font-size: 3em;
-        /* Reduce el tamaño del texto */
-    }
-
-    .sect3 span {
-        font-size: 4rem;
-        /* Reduce el tamaño del texto del span */
-        letter-spacing: 5px;
-        /* Reduce el espaciado de letras */
-    }
-
-    .container-text-center {
-        padding: 2em;
-        /* Reduce el padding */
-        margin: 5px;
-        /* Mantiene el margen reducido */
-        border-radius: 2em;
-        /* Reduce el radio del borde */
-    }
-}
 
 
 
@@ -433,127 +352,19 @@ header {
     text-align: center;
 }
 
-/* Media Queries para Opinión */
-@media (max-width: 1200px) {
-    .heading h1 {
-        font-size: 6rem;
-        /* Reduce el tamaño del texto */
-    }
-
-    .heading span {
-        font-size: 7rem;
-        /* Reduce el tamaño del texto del span */
-        letter-spacing: 10px;
-        /* Reduce el espaciado de letras */
-    }
-
-    .side {
-        width: 25%;
-        /* Aumenta el ancho para pantallas más pequeñas */
-    }
-
-    .middle {
-        width: 50%;
-        /* Reduce el ancho */
-    }
-
-    .container-text-center-4 {
-        padding: 4em;
-        /* Reduce el padding */
-        margin: 15px;
-        /* Reduce el margen */
-    }
-}
-
-@media (max-width: 768px) {
-    .heading h1 {
-        font-size: 5rem;
-        /* Reduce el tamaño del texto */
-    }
-
-    .heading span {
-        font-size: 6rem;
-        /* Reduce el tamaño del texto del span */
-        letter-spacing: 8px;
-        /* Reduce el espaciado de letras */
-    }
-
-    .side {
-        width: 100%;
-        /* Cambia a ancho completo */
-        margin-top: 5px;
-        /* Reduce el margen superior */
-    }
-
-    .middle {
-        width: 100%;
-        /* Cambia a ancho completo */
-        margin-top: 5px;
-        /* Reduce el margen superior */
-    }
-
-    .container-text-center-4 {
-        padding: 3em;
-        /* Reduce el padding */
-        margin: 10px;
-        /* Reduce el margen */
-    }
-}
-
-@media (max-width: 480px) {
-    .heading h1 {
-        font-size: 4rem;
-        /* Reduce el tamaño del texto */
-    }
-
-    .heading span {
-        font-size: 5rem;
-        /* Reduce el tamaño del texto del span */
-        letter-spacing: 5px;
-        /* Reduce el espaciado de letras */
-    }
-
-    .bar-container {
-        padding: 1em;
-        /* Ajusta el padding */
-    }
-
-    .container-text-center-4 {
-        padding: 2em;
-        /* Reduce el padding */
-        margin: 5px;
-        /* Mantiene el margen reducido */
-    }
-}
-
-
 /* SECCIÓN 5: Descubre más */
 .sect5 {
-    padding: 10em 20em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: nowrap;
-
+    height: 20rem;
     z-index: 1;
     background-image: url(../media/imgs/chocolate-descubre-mas.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.sect5 .pr-btn {
+.sect5 .btn {
     font-family: "Oswald", sans-serif;
-    margin: 0 auto;
-    border: none;
-    outline: 0;
-    padding: 1em;
+    width: 20%;
     color: #EDE6D6;
     background-color: rgb(189, 113, 113);
     text-align: center;
@@ -562,6 +373,15 @@ header {
     border-radius: 12px;
     text-decoration: none;
     box-shadow: 0 4px 15px rgb(0, 0, 0);
+    transition: 0.5s ease;
+}
+
+.sect5 .btn:hover {
+    transform: scale(1.05);
+}
+
+.sect5 .btn:active {
+    background-color: rgb(204, 89, 89);
 }
 
 
@@ -711,6 +531,9 @@ s .hover-efecto img {
 }
 
 .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -719,7 +542,7 @@ s .hover-efecto img {
     background-color: #261616;
     color: #EDE6D6;
     text-align: center;
-    padding-top: 40%;
+    padding: 10rem;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -1249,4 +1072,208 @@ footer>p>a {
 }
 
 
-/* s */
+/* RESPONSIVE */
+
+/* SECCIÓN 1: LA ESENCIA DEL CACAO ELEVADO AL ARTE */
+
+
+@media (max-width: 1200px) {
+
+    /* TÍTULOS DE SECCIONES 1 Y 2 */
+
+    .sect1 h1 {
+        font-size: 6.5rem;
+        text-align: center;
+    }
+
+    .sect1 h1 span {
+        font-size: 5.5rem;
+    }
+
+    .texto-col2 {
+        padding-bottom: 3rem;
+        rotate: none;
+    }
+
+
+    .sect2 h1 {
+        font-size: 5rem;
+    }
+
+    .sect2 h1 span {
+        font-size: 6rem;
+    }
+
+    /* Sección 2 */
+
+    .texto1 {
+        padding-top: 3rem;
+    }
+
+
+    /* SECCIÓN 3 */
+
+    .sect3 {
+        padding: 4em;
+    }
+
+    .sect3 h1 {
+        font-size: 3em;
+    }
+
+    .sect3 span {
+        font-size: 4rem;
+    }
+
+    /* SECCIÓN 4: OPINIONES */
+    .heading h1 {
+        font-size: 6rem;
+    }
+
+    .heading span {
+        font-size: 7rem;
+        letter-spacing: 10px;
+    }
+
+    .side {
+        width: 25%;
+    }
+
+    .middle {
+        width: 50%;
+    }
+
+    .container-text-center-4 {
+        padding: 4em;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    /* TÍTULO SECCIÓN 2 */
+
+    .sect2 h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .sect2 h1 span {
+        font-size: 5rem;
+    }
+
+    /* Sección 2 */
+
+    .texto1,
+    .texto2 {
+        display: flex !important;
+        align-items: center !important;
+        padding: 1rem;
+    }
+
+    .texto1 p,
+    .texto2 p {
+        padding: 1rem !important;
+        text-align: center !important;
+    }
+
+    .texto2 {
+        padding-right: 1rem !important;
+    }
+
+    /* SECCIÓN  3 */
+
+    .sect3 {
+        padding: 2.5em;
+    }
+
+    .sect3 h1 {
+        font-size: 2.5em;
+    }
+
+    .sect3 span {
+        font-size: 3.5rem;
+    }
+
+    /* SECCIÓN 4: OPINIONES */
+    .heading h1 {
+        font-size: 5rem;
+    }
+
+    .heading span {
+        font-size: 6rem;
+        letter-spacing: 8px;
+    }
+
+    .side {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .middle {
+        width: 100%;
+        margin-top: 5px;
+
+    }
+
+    .container-text-center-4 {
+        padding: 3em;
+        margin: 10px;
+    }
+
+    /* SECCIÓN 5 */
+    .sect5 .btn {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    /* SECCIÓN 3 */
+
+    .sect3 {
+        padding: 1em;
+    }
+
+    .sect3 h1 {
+        font-size: 1.5em;
+    }
+
+    .sect3 span {
+        font-size: 2.5rem;
+
+    }
+
+    .valores {
+        padding: 3rem;
+    }
+
+    /* SECCIÓN 4 */
+
+    .heading h1 {
+        font-size: 4rem;
+
+    }
+
+    .heading span {
+        font-size: 5rem;
+        letter-spacing: 5px;
+    }
+
+    .bar-container {
+        padding: 1em;
+    }
+
+    .container-text-center-4 {
+        padding: 2em;
+        margin: 5px;
+    }
+
+    /* SECCIÓN 5 */
+    .sect5 .btn {
+        font-size: 1.2REM;
+        width: 60%;
+    }
+}
