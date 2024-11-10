@@ -276,6 +276,10 @@ header {
     font-family: 'Oswald', serif;
 }
 
+.opiniones {
+    font-family: "Montserrat", sans-serif;
+}
+
 .heading span {
     font-family: 'Parisienne', cursive;
     font-size: 8.5rem;
@@ -1147,6 +1151,61 @@ footer>p>a {
         padding: 4em;
         margin: 15px;
     }
+
+    /* PÁGINA 2 */
+
+    /* SECCIÓN 1 */
+    .sect1-p2 h1 {
+        font-size: 5rem;
+    }
+    
+    .sect1-p2 h1 span {
+        font-size: 6rem;
+    }
+
+    /* SECCIÓN 2 */
+
+    .sect2-p2 h1 {
+        font-size: 5rem;
+        padding-right: 5rem;
+    }
+    
+    .sect2-p2 h1 span {
+        font-size: 6rem;
+    }
+
+    .sect2-p2 p {
+        font-size: 0.8rem;
+    }
+
+
+    .texto-4 {
+        padding: 1rem !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+    }
+
+    .texto3 h3, .texto4 h3, .texto-4 h3, .texto5 h3, .texto6 h3 {
+        font-size: 1.6rem;
+        padding-top: 2rem;
+        text-align: center;
+    }
+    .texto3 p, .texto4 p, .texto-4 p,.texto5 p, .texto6 p {
+        font-size: 0.8rem;
+        padding: 0 2rem 0 2rem;
+    }
+    
+    .galeria {
+        padding: 0.5rem;
+        margin: 0rem;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    
+
 }
 
 @media (max-width: 768px) {
@@ -1206,6 +1265,10 @@ footer>p>a {
         letter-spacing: 8px;
     }
 
+    .opiniones {
+        font-size: 0.9rem;
+    }
+
     .side {
         width: 100%;
         margin-top: 5px;
@@ -1226,9 +1289,107 @@ footer>p>a {
     .sect5 .btn {
         width: 40%;
     }
+
+    /* PÁGINA 2 */
+
+    /* SECCIÓN 1 */
+
+    .sect1-p2 h1 {
+        font-size: 4rem;
+    }
+    
+    .sect1-p2 h1 span {
+        font-size: 5rem;
+    }
+
+    /* SECCIÓN 2 */
+
+    .sect2-p2 h1 {
+        font-size: 4rem;
+        padding: 3rem;
+        text-align: center;
+        margin: 0rem;
+    }
+    
+    .sect2-p2 h1 span {
+        font-size: 5rem;
+    }
+
+    .sect2-p2 p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .texto3 {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .texto3 h3, .texto4 h3, .texto-4 h3, .texto5 h3, .texto6 h3 {
+        font-size: 1.6rem;
+        padding-top: 2rem;
+        text-align: center;
+    }
+    .texto3 p, .texto4 p, .texto-4 p,.texto5 p, .texto6 p {
+        font-size: 1rem;
+        padding: 2rem !important;
+    }
+
+    /* SECCIÓN 3 */
+
+    .sect3-p2 h1 {
+        font-size: 4rem;
+    }
+    
+    .sect3-p2 h1 span {
+        font-size: 5rem;
+    }
 }
 
 @media (max-width: 480px) {
+
+    /* MENU */
+
+    .iconos-link .navbar-link i {
+        font-size: 1rem;
+    }
+
+    .iconos-link .navbar-link {
+        padding: 0rem;
+    }
+
+    .iconos-link {
+       margin: 0rem;
+       padding: o.5rem;
+    }
+
+    .navbar-toggler {
+        font-size: 1rem;
+    }
+
+    /* SECCIÓN 1 */
+
+    .sect1 h1 {
+        font-size: 3rem;
+    }
+
+    .sect1 h1 span {
+        font-size: 3rem;
+    }
+
+     /* SECCIÓN 2 */
+
+     .sect2 h1 {
+        font-size: 3rem;
+    }
+
+    .texto1 p, .texto2 p{
+        font-size: 0.8rem;
+    }
+
+
+
 
 
     /* SECCIÓN 3 */
@@ -1253,12 +1414,12 @@ footer>p>a {
     /* SECCIÓN 4 */
 
     .heading h1 {
-        font-size: 4rem;
+        font-size: 3rem;
 
     }
 
     .heading span {
-        font-size: 5rem;
+        font-size: 3rem;
         letter-spacing: 5px;
     }
 
@@ -1275,5 +1436,83 @@ footer>p>a {
     .sect5 .btn {
         font-size: 1.2REM;
         width: 60%;
+    }
+
+    /* PÁGINA 2 */
+
+    /* SECCIÓN 1 */
+
+    .sect1-p2 h1 {
+        font-size: 2rem;
+    }
+    
+    .sect1-p2 h1 span {
+        font-size: 2rem;
+    }
+
+    /* SECCIÓN 2 */
+
+    .sect2-p2 h1 {
+        font-size: 2rem;
+    }
+    
+    .sect2-p2 h1 span {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .sect2-p2 h3 {
+        font-size: 3rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .sect2-p2 p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .texto-4 {
+        padding: 1rem !important;
+
+    }
+
+    .texto3 h3, .texto4 h3, .texto-4 h3, .texto5 h3, .texto6 h3 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .texto3 p, .texto4 p, .texto-4 p,.texto5 p, .texto6 p {
+        padding: 1.5rem !important;
+    }
+
+    /* SECCIÓN 3 */
+
+    .sect3-p2 h1 {
+        font-size: 2.5rem;
+    }
+    
+    .sect3-p2 h1 span {
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .social {
+        font-size: 0.8rem;
+        display: flex;
+        align-content: center;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .legal p {
+        font-size: 0.5rem;
     }
 }
